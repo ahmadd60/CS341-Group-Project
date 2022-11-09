@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birdz.LoginPage"
+             Title="Log In"
+             BackgroundColor="{DynamicResource PrimaryColor}">
+
+    <Grid BackgroundColor="{StaticResource PrimaryColor}">
+        <StackLayout Margin="20" VerticalOptions="FillAndExpand">
+            <Image Source="scarybird.jpeg"
+                   HeightRequest="200"
+                HorizontalOptions="Center"/>
+
+            <StackLayout Margin="0,40">
+                <Label Style="{StaticResource welcome}" 
+                       Text=" Welcome To Birdz"
+                       FontSize="32"/>
+                <Label Style="{StaticResource welcome}" 
+                       Text=" Sign In"
+                       FontSize="16"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Style="{StaticResource welcome}" 
+                       Text="Username"
+                       FontSize="16"/>
+                <Grid Margin="0,5">
+                    <Frame Opacity="16" BackgroundColor="White" CornerRadius="6"/>
+                    <Entry BackgroundColor="Transparent"
+                       TextColor="Black"
+                       PlaceholderColor="LightGray"
+                       Placeholder="Enter Username"/>
+
+                </Grid>
+                <Label Style="{StaticResource welcome}" 
+                       Text="Password"
+                       FontSize="16"/>
+                <Grid Margin="0,5">
+                    <Frame Opacity="16" BackgroundColor="White" CornerRadius="6"/>
+                    <Entry BackgroundColor="Transparent"
+                       TextColor="Black"
+                       PlaceholderColor="LightGray"
+                        Placeholder="Enter Password"
+                        IsPassword="True"/>
+                </Grid>
+            </StackLayout>
+            <Button Margin="0,15" BackgroundColor="{StaticResource SecondaryColor}"
+                    Text="Sign In"
+                    TextColor="{StaticResource PrimaryColor}"/>
+            <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                <Label Style="{StaticResource welcome}" 
+                       Text="Forgot Password?"
+                       FontSize="16"
+                       VerticalOptions="EndAndExpand"
+                       HorizontalOptions="StartAndExpand"
+                       HorizontalTextAlignment="Start"/>
+                <Label Style="{StaticResource welcome}" 
+                       Text="Register"
+                       FontSize="16"
+                       VerticalOptions="EndAndExpand"
+                       HorizontalOptions="EndAndExpand"
+                       HorizontalTextAlignment="End"/>
+            </StackLayout>
+
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

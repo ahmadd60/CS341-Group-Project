@@ -1,42 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Birdz.MainPage">
+             x:Class="Birdz.MainPage"
+             xmlns:local="clr-namespace:Birdz"
+             BackgroundColor="{StaticResource PrimaryColor}">
+    
+    <ContentPage.BindingContext>
+        <local:ListOfBirds/>
+    </ContentPage.BindingContext>
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
-
-            <Image
-                Source="scarybird.jpeg"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>
-    </ScrollView>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding BirdList}"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None"
+                      SeparatorColor="{StaticResource PrimaryColor}"
+                      IsPullToRefreshEnabled="True"
+                      RefreshControlColor="{StaticResource PrimaryColor}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Frame CornerRadius="10" HasShadow="True">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="{Binding ImageUrl}"
+                                               WidthRequest="100"
+                                               HeightRequest="100"/>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label VerticalOptions="Center"
+                                                   Text="{Binding BirdName}"
+                                                   FontSize="Large"/>
+                                            <Label VerticalOptions="Center"
+                                                   Text="{Binding Color}"
+                                                   FontSize="Large"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>
-

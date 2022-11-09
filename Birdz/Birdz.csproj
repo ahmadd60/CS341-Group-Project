@@ -45,4 +45,40 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="MapPage.xaml.cs">
+	    <DependentUpon>MapPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="EntryInfoPage.xaml.cs">
+	    <DependentUpon>EntryInfoPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="LoginPage.xaml.cs">
+	    <DependentUpon>LoginPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="CallCapturePage.xaml.cs">
+	    <DependentUpon>CallCapturePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="SearchPage.xaml.cs">
+	    <DependentUpon>SearchPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="MapPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="EntryInfoPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="CallCapturePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SearchPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
