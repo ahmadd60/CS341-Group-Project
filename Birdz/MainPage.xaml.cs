@@ -1,25 +1,13 @@
 ﻿namespace Birdz;
 
-public partial class MainPage : ContentPage
+public partial class MainPage : Microsoft.Maui.Controls.ContentPage
 {
-	int count = 0;
-
-	public MainPage()
-	{
-		InitializeComponent();
-	}
-
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+	public class BirdInfo
+    {
+        public string BirdName { get; set; }
+        public string Color { get; set; }
+        public string ImageUrl { get; set; }
+    }
 }
 
 

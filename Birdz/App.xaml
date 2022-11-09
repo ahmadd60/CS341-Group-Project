@@ -5,10 +5,12 @@
              x:Class="Birdz.App">
     <Application.Resources>
         <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
+            <Color x:Key="PrimaryColor">#1DA1F2</Color>
+            <Color x:Key="SecondaryColor">White</Color>
+
+            <Style x:Key="welcome"   TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource SecondaryColor}" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
