@@ -81,4 +81,10 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Npgsql" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Npgsql" Version="7.0.0" />
+	</ItemGroup>
 </Project>

@@ -6,4 +6,6 @@ public partial class MapPage : Microsoft.Maui.Controls.ContentPage
 	{
 		InitializeComponent();
 	}
+
+	
 }
