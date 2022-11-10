@@ -2,6 +2,10 @@
 
 public partial class MainPage : Microsoft.Maui.Controls.ContentPage
 {
+
+    public MainPage() {
+     InitializeComponent();
+    }
 	public class BirdInfo
     {
         public string BirdName { get; set; }
