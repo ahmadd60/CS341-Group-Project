@@ -7,7 +7,7 @@ namespace Birdz
 {
     public class LoginDB
     {
-        const String table = "Users";
+        const String table = "users";
         String cs;
         Dictionary<string, string> Usernames = new Dictionary<string, string>();
 
