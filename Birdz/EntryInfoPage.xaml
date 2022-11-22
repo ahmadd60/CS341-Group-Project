@@ -5,7 +5,7 @@
              Title="Entry">
     <StackLayout BackgroundColor="{StaticResource PrimaryColor}">
         <HorizontalStackLayout>
-            <Image Source="scarybird.jpeg" 
+            <Image Source="birdzmascot.jpeg" 
                WidthRequest="200"
                HeightRequest="200"
                HorizontalOptions="Start"

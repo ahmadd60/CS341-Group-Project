@@ -6,26 +6,22 @@
              
              Title="Birdz Search">
 
-    <StackLayout Margin="25,5">
+    <ScrollView>
+        <StackLayout Margin="25,5" VerticalOptions="StartAndExpand">
+        <Image Source="mysterybird.png"></Image>
         <Label Style="{StaticResource DefaultText}"
-               Text="Bird Name:"
-               FontSize="22"/>
+               Text="Bird Name:"/>
         <Entry BackgroundColor="White"
-               TextColor="Black"
-               PlaceholderColor="LightGray"
-               FontSize="22"/>
+               TextColor="Black"/>
         <Label Style="{StaticResource DefaultText}"
-               Text="Bird Color:"
-               FontSize="22"/>
+               Text="Bird Color:"/>
         <Entry BackgroundColor="White"
-               TextColor="Black"
-               PlaceholderColor="LightGray"/>
+               TextColor="Black"/>
         <Label Style="{StaticResource DefaultText}"
-               Text="Other Bird Info:"
-               FontSize="22"/>
+               Text="Other Bird Info:"/>
         <Entry BackgroundColor="White"
-               TextColor="Black"
-               PlaceholderColor="LightGray"/>
+               TextColor="Black"/>
     </StackLayout>
+    </ScrollView>
 
 </ContentPage>

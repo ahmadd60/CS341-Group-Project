@@ -4,10 +4,10 @@
              x:Class="Birdz.LoginPage"
              Title="Log In"
              BackgroundColor="{DynamicResource BackgroundColor}">
-
+    <ScrollView>
     <Grid BackgroundColor="{StaticResource BackgroundColor}">
         <StackLayout Margin="20" VerticalOptions="FillAndExpand">
-            <Image Source="scarybird.jpeg"
+            <Image Source="birdzmascot.jpeg"
                    HeightRequest="200"
                 HorizontalOptions="Center"/>
 
@@ -25,21 +25,18 @@
                        Text="Username"
                        FontSize="16"/>
                 <Grid Margin="0,5">
-                    <Frame Opacity="16" BackgroundColor="White" CornerRadius="6"/>
                     <Entry 
                        TextColor="Black"
                        Placeholder="Enter Username"
                        x:Name="Username"/>
 
                 </Grid>
-                <Label Style="{StaticResource DefaultText}" 
+                <Label Style="{StaticResource DefaultText}"
                        Text="Password"
                        FontSize="16"/>
                 <Grid Margin="0,5">
-                    <Frame Opacity="16" BackgroundColor="White" CornerRadius="6"/>
-                    <Entry BackgroundColor="Transparent"
-                       TextColor="Black"
-                       PlaceholderColor="LightGray"
+                    <Entry
+                        TextColor="Black"
                         Placeholder="Enter Password"
                         IsPassword="True"/>
                 </Grid>
@@ -65,5 +62,6 @@
 
         </StackLayout>
     </Grid>
+    </ScrollView>
 
 </ContentPage>

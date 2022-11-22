@@ -12,31 +12,31 @@ public class ListOfBirds
         {
             BirdName = "Eagle",
             Color = "White",
-            ImageUrl = "scarybird.jpeg"
+            ImageUrl = "birdzmascot.jpeg"
         });
         BirdList.Add(new BirdInfo()
         {
             BirdName = "Wren",
             Color = "Brown",
-            ImageUrl = "scarybird.jpeg"
+            ImageUrl = "birdzmascot.jpeg"
         });
         BirdList.Add(new BirdInfo()
         {
             BirdName = "Blue Footed Boobie",
             Color = "Blue",
-            ImageUrl = "scarybird.jpeg"
+            ImageUrl = "birdzmascot.jpeg"
         });
         BirdList.Add(new BirdInfo()
         {
             BirdName = "Robin",
             Color = "Red",
-            ImageUrl = "scarybird.jpeg"
+            ImageUrl = "birdzmascot.jpeg"
         });
         BirdList.Add(new BirdInfo()
         {
             BirdName = "Blue Jay",
             Color = "Blue",
-            ImageUrl = "scarybird.jpeg"
+            ImageUrl = "birdzmascot.jpeg"
         });
 
     }

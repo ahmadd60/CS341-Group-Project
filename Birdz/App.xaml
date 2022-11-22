@@ -8,7 +8,8 @@
             <Color x:Key="BackgroundColor">#1DA1F2</Color>
             <Color x:Key="DefaultTextColor">White</Color>
             <Style x:Key="DefaultText"   TargetType="Label">
-                <Setter Property="TextColor" Value="White" />
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="22"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>
