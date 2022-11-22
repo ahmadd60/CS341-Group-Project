@@ -3,25 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Birdz.LoginPage"
              Title="Log In"
-             BackgroundColor="{DynamicResource PrimaryColor}">
+             BackgroundColor="{DynamicResource BackgroundColor}">
 
-    <Grid BackgroundColor="{StaticResource PrimaryColor}">
+    <Grid BackgroundColor="{StaticResource BackgroundColor}">
         <StackLayout Margin="20" VerticalOptions="FillAndExpand">
             <Image Source="scarybird.jpeg"
                    HeightRequest="200"
                 HorizontalOptions="Center"/>
 
             <StackLayout Margin="0,40">
-                <Label Style="{StaticResource welcome}" 
+                <Label Style="{StaticResource DefaultText}" 
                        Text=" Welcome To Birdz"
                        FontSize="32"/>
-                <Label Style="{StaticResource welcome}" 
+                <Label Style="{StaticResource DefaultText}" 
                        Text=" Sign In"
                        FontSize="16"/>
             </StackLayout>
 
             <StackLayout>
-                <Label Style="{StaticResource welcome}" 
+                <Label Style="{StaticResource DefaultText}" 
                        Text="Username"
                        FontSize="16"/>
                 <Grid Margin="0,5">
@@ -32,7 +32,7 @@
                        x:Name="Username"/>
 
                 </Grid>
-                <Label Style="{StaticResource welcome}" 
+                <Label Style="{StaticResource DefaultText}" 
                        Text="Password"
                        FontSize="16"/>
                 <Grid Margin="0,5">
@@ -44,18 +44,18 @@
                         IsPassword="True"/>
                 </Grid>
             </StackLayout>
-            <Button Margin="0,15" BackgroundColor="{StaticResource SecondaryColor}"
+            <Button Margin="0,15" BackgroundColor="{StaticResource BackgroundColor}"
                     Text="Sign In"
-                    TextColor="{StaticResource PrimaryColor}"
+                    TextColor="{StaticResource DefaultTextColor}"
                     Clicked="SignInClicked"/>
             <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
-                <Label Style="{StaticResource welcome}" 
+                <Label Style="{StaticResource DefaultText}" 
                        Text="Forgot Password?"
                        FontSize="16"
                        VerticalOptions="EndAndExpand"
                        HorizontalOptions="StartAndExpand"
                        HorizontalTextAlignment="Start"/>
-                <Label Style="{StaticResource welcome}" 
+                <Label Style="{StaticResource DefaultText}" 
                        Text="Register"
                        FontSize="16"
                        VerticalOptions="EndAndExpand"

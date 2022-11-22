@@ -2,8 +2,8 @@ namespace Birdz;
 
 public partial class CallCapturePage : ContentPage
 {
-	public CallCapturePage()
-	{
-		InitializeComponent();
-	}
+    public CallCapturePage()
+    {
+        InitializeComponent();
+    }
 }

@@ -14,7 +14,7 @@ public class ListOfBirds
             Color = "White",
             ImageUrl = "scarybird.jpeg"
         });
-         BirdList.Add(new BirdInfo()
+        BirdList.Add(new BirdInfo()
         {
             BirdName = "Wren",
             Color = "Brown",

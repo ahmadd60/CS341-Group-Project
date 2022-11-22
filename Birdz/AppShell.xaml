@@ -16,6 +16,10 @@
                 Icon="scarybird.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:SearchPage}"/>
     </FlyoutItem>
+    <FlyoutItem Title="Capture"
+                Icon="scarybird.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:CallCapturePage}"/>
+    </FlyoutItem>
     <FlyoutItem Title="Map"
                 Icon="scarybird.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:MapPage}"/>
