@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birdz.FieldGuideCuckoos"
+             Title="Cuckoos">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="petersonbird1024_230.jpg"></Image>
+            <Image Source="petersonbird1024_231.jpg"></Image>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

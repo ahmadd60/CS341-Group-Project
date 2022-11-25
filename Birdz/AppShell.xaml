@@ -13,26 +13,146 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
     <FlyoutItem Title="Search"
-                Icon="scarybird.jpeg">
+                Icon="birdzmascot.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:SearchPage}"/>
     </FlyoutItem>
     <FlyoutItem Title="Capture"
-                Icon="scarybird.jpeg">
+                Icon="birdzmascot.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:CallCapturePage}"/>
     </FlyoutItem>
     <FlyoutItem Title="Map"
-                Icon="scarybird.jpeg">
+                Icon="birdzmascot.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:MapPage}"/>
     </FlyoutItem>
     <FlyoutItem Title="EntryInfoPage"
-                Icon="scarybird.jpeg">
+                Icon="birdzmascot.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:EntryInfoPage}"/>
     </FlyoutItem>
     <FlyoutItem Title="Log In"
-                Icon="scarybird.jpeg">
+                Icon="birdzmascot.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"/>
     </FlyoutItem>
-
+    <FlyoutItem Title="Bonus Resources"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:ExtraResourcesPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Field Guide"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldManualContentsPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Field Guide Intro"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideIntro}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Geese, Swans, and Ducks"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideGeese}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Chickenlike Birds"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideChickens}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Loons and Grebes"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideLoons}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Tubenoses, Pelicans, Cormorants, and Relatives"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideTubenoses}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Waders"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWaders}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Diurnal Birds of Prey"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideVultures}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Rail-Like Birds"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideCoots}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Shorebirds"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideShorebirds}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Gulls, Terns, Skimmers, and Jaegers"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideGulls}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Alcids"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideAlcids}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Pigeons and Doves"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuidePigeons}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Parakeets"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideParakeets}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Cuckoos"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideCuckoos}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Owls and Nightjars"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideOwls}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Hummingbirds"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideHummingbirds}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Woodpeckers"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWoodpeckers}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Flycatchers"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideFlycatchers}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Shrikes and Vereos"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideShrikes}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Jays and Crows"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideJays}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Swallows and Larks"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideSwallows}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Chickadees, Titmice, and Nuthatches"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideChickadees}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Wrens, Kinglets, and Gnatcatchers"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWrens}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Wrens, Kinglets, and Gnatcatchers"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWrens}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Wrens, Kinglets, and Gnatcatchers"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWrens}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Wrens, Kinglets, and Gnatcatchers"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWrens}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Wrens, Kinglets, and Gnatcatchers"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWrens}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Wrens, Kinglets, and Gnatcatchers"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWrens}"/>
+    </FlyoutItem>
+    
 
 </Shell>
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birdz.FieldGuideChickadees"
+             Title="Chickadees, Titmice, and Nuthatches">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="petersonbird1024_298.jpg"></Image>
+            <Image Source="petersonbird1024_299.jpg"></Image>
+            <Image Source="petersonbird1024_300.jpg"></Image>
+            <Image Source="petersonbird1024_301.jpg"></Image>
+            <Image Source="petersonbird1024_302.jpg"></Image>
+            <Image Source="petersonbird1024_303.jpg"></Image>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

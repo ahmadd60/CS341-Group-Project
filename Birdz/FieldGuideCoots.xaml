@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birdz.FieldGuideCoots"
+             Title="Rail-Like Birds">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="petersonbird1024_136.jpg"></Image>
+            <Image Source="petersonbird1024_137.jpg"></Image>
+            <Image Source="petersonbird1024_138.jpg"></Image>
+            <Image Source="petersonbird1024_139.jpg"></Image>
+            <Image Source="petersonbird1024_140.jpg"></Image>
+            <Image Source="petersonbird1024_141.jpg"></Image>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
