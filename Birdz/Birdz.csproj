@@ -46,49 +46,49 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="FieldGuideAlcids.xaml.cs">
+	  <Compile Update="RPF\FieldGuideAlcids.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="FieldGuideChickens.xaml.cs">
+	  <Compile Update="RPF\FieldGuideChickens.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="FieldGuideCoots.xaml.cs">
+	  <Compile Update="RPF\FieldGuideCoots.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="FieldGuideCuckoos.xaml.cs">
+	  <Compile Update="RPF\FieldGuideCuckoos.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="FieldGuideGeese.xaml.cs">
+	  <Compile Update="RPF\FieldGuideGeese.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="FieldGuideGulls.xaml.cs">
+	  <Compile Update="RPF\FieldGuideGulls.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="FieldGuideIntro.xaml.cs">
+	  <Compile Update="RPF\FieldGuideIntro.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="FieldGuideLoons.xaml.cs">
+	  <Compile Update="RPF\FieldGuideLoons.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="FieldGuideParakeets.xaml.cs">
+	  <Compile Update="RPF\FieldGuideParakeets.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="FieldGuidePigeons.xaml.cs">
+	  <Compile Update="RPF\FieldGuidePigeons.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="FieldGuideShorebirds.xaml.cs">
+	  <Compile Update="RPF\FieldGuideShorebirds.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="FieldGuideTubenoses.xaml.cs">
+	  <Compile Update="RPF\FieldGuideTubenoses.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="FieldGuideVultures.xaml.cs">
+	  <Compile Update="RPF\FieldGuideVultures.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="FieldGuideWaders.xaml.cs">
+	  <Compile Update="RPF\FieldGuideWaders.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="FieldGuideHummingbirds.xaml.cs">
+	  <Compile Update="RPF\FieldGuideHummingbirds.xaml.cs">
 	    <DependentUpon>FieldGuideHummingbirds.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="MapPage.xaml.cs">
@@ -112,79 +112,79 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="FieldGuideAlcids.xaml">
+	  <MauiXaml Update="RPF\FieldGuideAlcids.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideChickadees.xaml">
+	  <MauiXaml Update="RPF\FieldGuideChickadees.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideChickens.xaml">
+	  <MauiXaml Update="RPF\FieldGuideChickens.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideCoots.xaml">
+	  <MauiXaml Update="RPF\FieldGuideCoots.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideCuckoos.xaml">
+	  <MauiXaml Update="RPF\FieldGuideCuckoos.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideFlycatchers.xaml">
+	  <MauiXaml Update="RPF\FieldGuideFlycatchers.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideGeese.xaml">
+	  <MauiXaml Update="RPF\FieldGuideGeese.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideGulls.xaml">
+	  <MauiXaml Update="RPF\FieldGuideGulls.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideIntro.xaml">
+	  <MauiXaml Update="RPF\FieldGuideIntro.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideJays.xaml">
+	  <MauiXaml Update="RPF\FieldGuideJays.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideLoons.xaml">
+	  <MauiXaml Update="RPF\FieldGuideLoons.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideOwls.xaml">
+	  <MauiXaml Update="RPF\FieldGuideOwls.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideParakeets.xaml">
+	  <MauiXaml Update="RPF\FieldGuideParakeets.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuidePigeons.xaml">
+	  <MauiXaml Update="RPF\FieldGuidePigeons.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideShorebirds.xaml">
+	  <MauiXaml Update="RPF\FieldGuideShorebirds.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideShrikes.xaml">
+	  <MauiXaml Update="RPF\FieldGuideShrikes.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideSwallows.xaml">
+	  <MauiXaml Update="RPF\FieldGuideSwallows.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideSwifts.xaml">
+	  <MauiXaml Update="RPF\FieldGuideSwifts.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideTubenoses.xaml">
+	  <MauiXaml Update="RPF\FieldGuideTubenoses.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideVultures.xaml">
+	  <MauiXaml Update="RPF\FieldGuideVultures.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideWaders.xaml">
+	  <MauiXaml Update="RPF\FieldGuideWaders.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideWoodpeckers.xaml">
+	  <MauiXaml Update="RPF\FieldGuideWoodpeckers.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideWrens.xaml">
+	  <MauiXaml Update="RPF\FieldGuideWrens.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldManualContentsPage.xaml">
+	  <MauiXaml Update="RPF\FieldManualContentsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FieldGuideHummingbirds.xaml">
+	  <MauiXaml Update="RPF\FieldGuideHummingbirds.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MapPage.xaml">
