@@ -2,8 +2,8 @@ namespace Birdz;
 
 public partial class FieldGuideChickens : ContentPage
 {
-	public FieldGuideChickens()
-	{
-		InitializeComponent();
-	}
+    public FieldGuideChickens()
+    {
+        InitializeComponent();
+    }
 }
