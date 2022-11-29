@@ -22,6 +22,11 @@ namespace Birdz
             }
         }
 
+        public bool CheckValidLogIn(String username, String password)
+        {
+            return !VerifyUsernameUnique(username) ? database.GetPassword(username) == password : false;
+        }
+
         private bool VerifyUsernameUnique(String username)
         {
             return database.VerifyUsernameUnique(username);
