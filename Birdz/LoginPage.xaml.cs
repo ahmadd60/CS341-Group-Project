@@ -5,8 +5,8 @@ public partial class LoginPage : ContentPage
     Login LoginLogic = new Login();
 
     public LoginPage()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
     }
 
     void SignInClicked(object sender, EventArgs e)

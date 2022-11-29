@@ -2,8 +2,8 @@ namespace Birdz;
 
 public partial class SearchPage : ContentPage
 {
-	public SearchPage()
-	{
-		InitializeComponent();
-	}
+    public SearchPage()
+    {
+        InitializeComponent();
+    }
 }

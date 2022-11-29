@@ -2,42 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Birdz.SearchPage"
-             BackgroundColor="{StaticResource PrimaryColor}"
+             BackgroundColor="{StaticResource BackgroundColor}"
              
-             Title="Search">
+             Title="Birdz Search">
 
-    <Grid BackgroundColor="{StaticResource PrimaryColor}">
-        <StackLayout>
-            <Label Style="{StaticResource welcome}" 
-                       Text="Bird Name:"
-                       FontSize="16"/>
-            <Grid Margin="0,5">
-                <Frame Opacity="16" BackgroundColor="White" CornerRadius="6"/>
-                <Entry BackgroundColor="Transparent"
-                       TextColor="Black"
-                       PlaceholderColor="LightGray"/>
-            </Grid>
+    <ScrollView>
+        <StackLayout Margin="25,5" VerticalOptions="StartAndExpand">
+        <Image Source="mysterybird.png"></Image>
+        <Label Style="{StaticResource DefaultText}"
+               Text="Bird Name:"/>
+        <Entry BackgroundColor="White"
+               TextColor="Black"/>
+        <Label Style="{StaticResource DefaultText}"
+               Text="Bird Color:"/>
+        <Entry BackgroundColor="White"
+               TextColor="Black"/>
+        <Label Style="{StaticResource DefaultText}"
+               Text="Other Bird Info:"/>
+        <Entry BackgroundColor="White"
+               TextColor="Black"/>
+    </StackLayout>
+    </ScrollView>
 
-            <Label Style="{StaticResource welcome}" 
-                       Text="Bird Color:"
-                       FontSize="16"/>
-            <Grid Margin="0,5">
-                <Frame Opacity="16" BackgroundColor="White" CornerRadius="6"/>
-                <Entry BackgroundColor="Transparent"
-                       TextColor="Black"
-                       PlaceholderColor="LightGray"/>
-            </Grid>
-
-            <Label Style="{StaticResource welcome}" 
-                       Text="Other Bird Info:"
-                       FontSize="16"/>
-            <Grid Margin="0,5">
-                <Frame Opacity="16" BackgroundColor="White" CornerRadius="6"/>
-                <Entry BackgroundColor="Transparent"
-                       TextColor="Black"
-                       PlaceholderColor="LightGray"/>
-            </Grid>
-        </StackLayout>
-
-    </Grid>
 </ContentPage>

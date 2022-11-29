@@ -5,11 +5,11 @@
              x:Class="Birdz.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="PrimaryColor">#1DA1F2</Color>
-            <Color x:Key="SecondaryColor">White</Color>
-
-            <Style x:Key="welcome"   TargetType="Label">
-                <Setter Property="TextColor" Value="{DynamicResource SecondaryColor}" />
+            <Color x:Key="BackgroundColor">#1DA1F2</Color>
+            <Color x:Key="DefaultTextColor">White</Color>
+            <Style x:Key="DefaultText"   TargetType="Label">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="22"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

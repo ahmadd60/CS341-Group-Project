@@ -1,9 +1,9 @@
 namespace Birdz;
 
-public partial class EntryInfoPage: ContentPage
+public partial class EntryInfoPage : ContentPage
 {
-	public EntryInfoPage()
-	{
-		InitializeComponent();
-	}
+    public EntryInfoPage()
+    {
+        InitializeComponent();
+    }
 }
