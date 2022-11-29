@@ -30,7 +30,7 @@ namespace Birdz
         {
             using var con = new NpgsqlConnection(cs);
             con.Open();
-            var sql = $"INSERT INTO {table} VALUES ({username}, {password});";
+            var sql = "INSERT INTO users VALUES('duaaahmad', '1234567890');";
 
             using var cmd = new NpgsqlCommand(sql, con);
         }
