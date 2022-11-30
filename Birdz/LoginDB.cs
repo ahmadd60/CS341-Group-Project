@@ -1,7 +1,43 @@
-﻿using System;
+﻿
+/* Unmerged change from project 'Birdz (net6.0-maccatalyst)'
+Before:
+using System;
 using Npgsql;
 using System.Data;
 using System.Collections.ObjectModel;
+After:
+using Npgsql;
+using System;
+using System.Collections.ObjectModel;
+using System.Data;
+*/
+
+/* Unmerged change from project 'Birdz (net6.0-windows10.0.19041.0)'
+Before:
+using System;
+using Npgsql;
+using System.Data;
+using System.Collections.ObjectModel;
+After:
+using Npgsql;
+using System;
+using System.Collections.ObjectModel;
+using System.Data;
+*/
+
+/* Unmerged change from project 'Birdz (net6.0-ios)'
+Before:
+using System;
+using Npgsql;
+using System.Data;
+using System.Collections.ObjectModel;
+After:
+using Npgsql;
+using System;
+using System.Collections.ObjectModel;
+using System.Data;
+*/
+using Npgsql;
 
 namespace Birdz
 {
@@ -14,7 +50,7 @@ namespace Birdz
         public LoginDB()
         {
             var bitHost = "db.bit.io";
-            var bitApiKey = "v2_3vT6r_3hj5CFNwmiQ9DeintbZMdi3"; 
+            var bitApiKey = "v2_3vT6r_3hj5CFNwmiQ9DeintbZMdi3";
 
             var bitUser = "ahmadd60";
             var bitDbName = $"{bitUser}/Birdz";
@@ -44,7 +80,7 @@ namespace Birdz
         {
             String sql = $"SELECT * FROM \"{table}\"";
             Usernames.Clear();
-                
+
             using var con = new NpgsqlConnection(cs);
             con.Open();
 

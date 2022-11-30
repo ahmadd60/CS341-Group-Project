@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birdz.FieldGuideGeese"
+             Title="Geese, Swans, and Ducks"
+             BackgroundColor="{DynamicResource BackgroundColor}">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="petersonbird1024_17.jpg"></Image>
+            <Image Source="petersonbird1024_18.jpg"></Image>
+            <Image Source="petersonbird1024_19.jpg"></Image>
+            <Image Source="petersonbird1024_20.jpg"></Image>
+            <Image Source="petersonbird1024_21.jpg"></Image>
+            <Image Source="petersonbird1024_22.jpg"></Image>
+            <Image Source="petersonbird1024_23.jpg"></Image>
+            <Image Source="petersonbird1024_24.jpg"></Image>
+            <Image Source="petersonbird1024_25.jpg"></Image>
+            <Image Source="petersonbird1024_26.jpg"></Image>
+            <Image Source="petersonbird1024_27.jpg"></Image>
+            <Image Source="petersonbird1024_28.jpg"></Image>
+            <Image Source="petersonbird1024_29.jpg"></Image>
+            <Image Source="petersonbird1024_30.jpg"></Image>
+            <Image Source="petersonbird1024_31.jpg"></Image>
+            <Image Source="petersonbird1024_32.jpg"></Image>
+            <Image Source="petersonbird1024_33.jpg"></Image>
+            <Image Source="petersonbird1024_34.jpg"></Image>
+            <Image Source="petersonbird1024_35.jpg"></Image>
+            <Image Source="petersonbird1024_36.jpg"></Image>
+            <Image Source="petersonbird1024_37.jpg"></Image>
+            <Image Source="petersonbird1024_38.jpg"></Image>
+            <Image Source="petersonbird1024_39.jpg"></Image>
+            <Image Source="petersonbird1024_40.jpg"></Image>
+            <Image Source="petersonbird1024_41.jpg"></Image>
+            <Image Source="petersonbird1024_42.jpg"></Image>
+            <Image Source="petersonbird1024_43.jpg"></Image>
+            <Image Source="petersonbird1024_44.jpg"></Image>
+            <Image Source="petersonbird1024_45.jpg"></Image>
+            <Image Source="petersonbird1024_46.jpg"></Image>
+            <Image Source="petersonbird1024_47.jpg"></Image>
+            <Image Source="petersonbird1024_48.jpg"></Image>
+            <Image Source="petersonbird1024_49.jpg"></Image>
+            <Image Source="petersonbird1024_50.jpg"></Image>
+            <Image Source="petersonbird1024_51.jpg"></Image>
+            <Image Source="petersonbird1024_52.jpg"></Image>
+            <Image Source="petersonbird1024_53.jpg"></Image>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

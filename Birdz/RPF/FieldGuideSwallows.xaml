@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birdz.FieldGuideSwallows"
+             Title="Swallows and Larks">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="petersonbird1024_292.jpg"></Image>
+            <Image Source="petersonbird1024_293.jpg"></Image>
+            <Image Source="petersonbird1024_294.jpg"></Image>
+            <Image Source="petersonbird1024_295.jpg"></Image>
+            <Image Source="petersonbird1024_296.jpg"></Image>
+            <Image Source="petersonbird1024_297.jpg"></Image>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,5 +1,4 @@
-﻿using System;
-namespace Birdz
+﻿namespace Birdz
 {
     public class Login
     {
@@ -11,7 +10,7 @@ namespace Birdz
 
         public bool AddEntry(String username, String password)
         {
-            if(VerifyUsernameUnique(username))
+            if (VerifyUsernameUnique(username))
             {
                 database.AddEntry(username, password);
                 return true;

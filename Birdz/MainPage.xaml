@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Birdz.MainPage"
              xmlns:local="clr-namespace:Birdz"
-             BackgroundColor="{StaticResource PrimaryColor}">
+             BackgroundColor="{StaticResource BackgroundColor}">
     
     <ContentPage.BindingContext>
         <local:ListOfBirds/>
@@ -14,9 +14,9 @@
             <ListView ItemsSource="{Binding BirdList}"
                       HasUnevenRows="True"
                       SeparatorVisibility="None"
-                      SeparatorColor="{StaticResource PrimaryColor}"
+                      SeparatorColor="{StaticResource BackgroundColor}"
                       IsPullToRefreshEnabled="True"
-                      RefreshControlColor="{StaticResource PrimaryColor}">
+                      RefreshControlColor="{StaticResource BackgroundColor}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
