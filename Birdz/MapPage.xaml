@@ -8,5 +8,11 @@
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <!--
+        <Grid>
+            <Map x:Name="map"/>
+        </Grid>
+        -->
+
     </VerticalStackLayout>
 </ContentPage>

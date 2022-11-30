@@ -12,9 +12,9 @@
                VerticalOptions="Start"/>
             <Button Text="Update Entry"
                 VerticalOptions="Start"
-                HorizontalOptions="Fill"
+                HorizontalOptions="End"
                FontSize="Large"
-                WidthRequest="300"
+                WidthRequest="250"
                 HeightRequest="100"/>
         </HorizontalStackLayout>
         <Label Text="Expanded Bird Info"
