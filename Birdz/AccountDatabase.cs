@@ -5,13 +5,13 @@ using System.Collections.ObjectModel;
 
 namespace Birdz
 {
-    public class LoginDB
+    public class AccountDatabase
     {
         const String table = "users";
         String cs;
         Dictionary<string, string> Usernames = new Dictionary<string, string>();
 
-        public LoginDB()
+        public AccountDatabase()
         {
             var bitHost = "db.bit.io";
             var bitApiKey = "v2_3wAsN_6fH5FtrJ45CyhB4Ux8Vim6V"; 
@@ -43,7 +43,6 @@ namespace Birdz
         {
             return Usernames[username];
         }
-
 
         public bool VerifyUsernameUnique(String username)
         {

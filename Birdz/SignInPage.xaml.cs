@@ -2,25 +2,25 @@
 
 public partial class SignInPage : ContentPage
 {
-    Login LoginLogic = new Login();
+    AccountPreparation LoginLogic = new AccountPreparation();
 
     public SignInPage()
 	{
 		InitializeComponent();
 	}
 
-    void SignInClicked(object sender, EventArgs e)
+   async void SignInClicked(object sender, EventArgs e)
     {
-        if (LoginLogic.AddEntry(Username.Text, Password.Text))
+        String username = Username.Text;
+        String password = Password.Text;
+
+        if (LoginLogic.AddEntry(username, password))
         {
-            SignIn.Clicked += (sender, args) =>
-            {
-                Navigation.PushAsync(new EntryInfoPage());
-            };
+            await Navigation.PushAsync(new EntryInfoPage());
         }
         else
         {
-            DisplayAlert("ERROR", "Username Taken", "OK");
+            await DisplayAlert("ERROR", "Username Taken", "OK");
         }
 
     }

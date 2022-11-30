@@ -1,11 +1,11 @@
 ﻿using System;
 namespace Birdz
 {
-    public class Login
+    public class AccountPreparation
     {
-        static LoginDB database = new LoginDB();
+        static AccountDatabase database = new AccountDatabase();
 
-        public Login()
+        public AccountPreparation()
         {
         }
 

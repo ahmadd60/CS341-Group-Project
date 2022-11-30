@@ -4,25 +4,25 @@ namespace Birdz;
 
 public partial class LoginPage : ContentPage
 {
-    Login LoginLogic = new Login();
+    AccountPreparation Login = new AccountPreparation();
 
     public LoginPage()
 	{
 		InitializeComponent();
     }
 
-    void SignInClicked(object sender, EventArgs e)
+    async void SignInClicked(object sender, EventArgs e)
     {
-        if(LoginLogic.CheckValidLogIn(Username.Text, Password.Text))
+        String username = Username.Text;
+        String password = Password.Text;
+
+        if(Login.CheckValidLogIn(username, password))
         {
-            SignIn.Clicked += async (sender, args) =>
-            {
-                await Navigation.PushAsync(new EntryInfoPage());
-            };
+            await Navigation.PushAsync(new EntryInfoPage());
         }
         else
         {
-            DisplayAlert("ERROR", "Username Taken", "OK");
+            await DisplayAlert("ERROR", "Username Taken", "OK");
         }
     }
 
