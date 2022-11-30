@@ -1,6 +1,6 @@
 namespace Birdz;
 
-public partial class JournalEntry : ContentView
+public partial class JournalEntry : ContentPage
 {
 	public JournalEntry()
 	{

@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Birdz.JournalEntry">
 	<ScrollView>
 		<StackLayout>
-			<Image Source="birdzmascot.jpeg"
-			HeightRequest="100"
-				   WidthRequest="100"/>
-			<Label Text="Journal Title" FontSize="Small"/>
-			<Label Text="Bird Name: Robin" FontSize="Small"/>
-			<Label Text="Date: 10/24/2022" FontSize="Small"/>
-			<Label Text="Location" FontSize="Small"/>
+            <Label Text="New Journal Entry" HorizontalOptions="Center" FontSize="Title"/>
+            <Label Text="Journal Title:" FontSize="Small"/>
+            <Entry Placeholder="title" FontSize="Small"/>
+			<Label Text="Bird Name:" FontSize="Small"/>
+            <Entry Placeholder="robin" FontSize="Small"/>
+			<Label Text="Date:" FontSize="Small"/>
+            <Entry Placeholder="10/24/2022" FontSize="Small"/>
+			<Label Text="Location:" FontSize="Small"/>
+            <Entry Placeholder="outside" FontSize="Small"/>
 			<Frame CornerRadius="25" BackgroundColor="{StaticResource BackgroundColor}">
 				<StackLayout>
 
-					<Entry Text="{Binding EntryText}"
+					<Editor Placeholder="pretty bird, much red, very tweet"
 						   HeightRequest="300"
 						   BackgroundColor="AliceBlue"
-						   CursorPosition="1"
 						   IsSpellCheckEnabled="True"
                        />
 
 				</StackLayout>
 			</Frame>
-			<Button Text="Save" Command="{Binding SaveCommand}" WidthRequest="100"/>
-			<Button Text="Delete" Command="{Binding SaveCommand}" WidthRequest="100"/>
+			<Button Text="Save"  WidthRequest="100" BackgroundColor="{StaticResource BackgroundColor}"/>
+			<Button Text="Delete"  WidthRequest="100" BackgroundColor="{StaticResource BackgroundColor}"/>
 		</StackLayout>
 	</ScrollView>
-</ContentView>
+</ContentPage>
