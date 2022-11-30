@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text.RegularExpressions;
+
 namespace Birdz
 {
     public class AccountPreparation
@@ -11,7 +13,7 @@ namespace Birdz
 
         public bool AddEntry(String username, String password)
         {
-            if(VerifyUsernameUnique(username))
+            if (VerifyUsernameUnique(username))
             {
                 database.AddEntry(username, password);
                 return true;

@@ -26,12 +26,9 @@ public partial class LoginPage : ContentPage
         }
     }
 
-    void RegisterClicked(object sender, EventArgs e)
+    async void RegisterClicked(object sender, EventArgs e)
     {
-        Register.Clicked += async (sender, args) =>
-        {
-            await Navigation.PushAsync(new SignInPage());
-        };
+       await Navigation.PushAsync(new SignInPage());
     }
 
 
