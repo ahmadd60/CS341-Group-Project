@@ -16,7 +16,7 @@
                        Text=" Welcome To Birdz"
                        FontSize="32"/>
                 <Label Style="{StaticResource DefaultText}" 
-                       Text=" Sign In"
+                       Text=" Log In"
                        FontSize="16"/>
             </StackLayout>
 
@@ -44,20 +44,19 @@
             <Button Margin="0,15" BackgroundColor="{StaticResource BackgroundColor}"
                     Text="Sign In"
                     TextColor="{StaticResource DefaultTextColor}"
-                    Clicked="SignInClicked"/>
+                    Clicked="SignInClicked"
+                    x:Name="SignIn"/>
             <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
-                <Label Style="{StaticResource DefaultText}" 
+                <Button Style="{StaticResource DefaultText}" 
                        Text="Forgot Password?"
                        FontSize="16"
                        VerticalOptions="EndAndExpand"
-                       HorizontalOptions="StartAndExpand"
-                       HorizontalTextAlignment="Start"/>
-                <Label Style="{StaticResource DefaultText}" 
+                       HorizontalOptions="StartAndExpand"/>
+                <Button Style="{StaticResource DefaultText}" 
                        Text="Register"
                        FontSize="16"
                        VerticalOptions="EndAndExpand"
-                       HorizontalOptions="EndAndExpand"
-                       HorizontalTextAlignment="End"/>
+                       HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
         </StackLayout>

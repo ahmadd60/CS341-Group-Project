@@ -11,6 +11,5 @@ public partial class LoginPage : ContentPage
 
     void SignInClicked(object sender, EventArgs e)
     {
-        if (!LoginLogic.AddEntry("duaaahmad", "1234567890")) DisplayAlert("ERROR", "Username Taken", "OK");
     }
 }
