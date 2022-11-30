@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birdz.FieldGuideIntro"
+             Title="Roger Peterson Field Manual"
+             BackgroundColor="{StaticResource BackgroundColor}">
+    <ScrollView>
+    <VerticalStackLayout>
+        <Image Source="petersonbird1024_1.jpg"></Image>
+        <Image Source="petersonbird1024_2.jpg"></Image>
+        <Image Source="petersonbird1024_3.jpg"></Image>
+        <Image Source="petersonbird1024_4.jpg"></Image>
+        <Image Source="petersonbird1024_5.jpg"></Image>
+        <Image Source="petersonbird1024_6.jpg"></Image>
+        <Image Source="petersonbird1024_7.jpg"></Image>
+        <Image Source="petersonbird1024_8.jpg"></Image>
+        <Image Source="petersonbird1024_9.jpg"></Image>
+        <Image Source="petersonbird1024_10.jpg"></Image>
+        <Image Source="petersonbird1024_11.jpg"></Image>
+        <Image Source="petersonbird1024_12.jpg"></Image>
+        <Image Source="petersonbird1024_13.jpg"></Image>
+        <Image Source="petersonbird1024_14.jpg"></Image>
+        <Image Source="petersonbird1024_15.jpg"></Image>
+        <Image Source="petersonbird1024_16.jpg"></Image>
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

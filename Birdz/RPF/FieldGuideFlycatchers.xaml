@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birdz.FieldGuideFlycatchers"
+             Title="Flycatchers">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="petersonbird1024_264.jpg"></Image>
+            <Image Source="petersonbird1024_265.jpg"></Image>
+            <Image Source="petersonbird1024_266.jpg"></Image>
+            <Image Source="petersonbird1024_267.jpg"></Image>
+            <Image Source="petersonbird1024_268.jpg"></Image>
+            <Image Source="petersonbird1024_269.jpg"></Image>
+            <Image Source="petersonbird1024_270.jpg"></Image>
+            <Image Source="petersonbird1024_271.jpg"></Image>
+            <Image Source="petersonbird1024_272.jpg"></Image>
+            <Image Source="petersonbird1024_273.jpg"></Image>
+            <Image Source="petersonbird1024_274.jpg"></Image>
+            <Image Source="petersonbird1024_275.jpg"></Image>
+            <Image Source="petersonbird1024_276.jpg"></Image>
+            <Image Source="petersonbird1024_277.jpg"></Image>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

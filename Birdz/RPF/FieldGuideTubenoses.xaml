@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birdz.FieldGuideTubenoses"
+             Title="Tubenoses, Pelicans, Cormorants, and Relatives">
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+    <Image Source="petersonbird1024_70.jpg"></Image>
+    <Image Source="petersonbird1024_71.jpg"></Image>
+    <Image Source="petersonbird1024_72.jpg"></Image>
+    <Image Source="petersonbird1024_73.jpg"></Image>
+    <Image Source="petersonbird1024_74.jpg"></Image>
+    <Image Source="petersonbird1024_75.jpg"></Image>
+    <Image Source="petersonbird1024_76.jpg"></Image>
+    <Image Source="petersonbird1024_77.jpg"></Image>
+    <Image Source="petersonbird1024_78.jpg"></Image>
+    <Image Source="petersonbird1024_79.jpg"></Image>
+    <Image Source="petersonbird1024_80.jpg"></Image>
+    <Image Source="petersonbird1024_81.jpg"></Image>
+    <Image Source="petersonbird1024_82.jpg"></Image>
+    <Image Source="petersonbird1024_83.jpg"></Image>
+    <Image Source="petersonbird1024_84.jpg"></Image>
+    <Image Source="petersonbird1024_85.jpg"></Image>
+    <Image Source="petersonbird1024_86.jpg"></Image>
+    <Image Source="petersonbird1024_87.jpg"></Image>
+    <Image Source="petersonbird1024_88.jpg"></Image>
+    <Image Source="petersonbird1024_89.jpg"></Image>
+    <Image Source="petersonbird1024_90.jpg"></Image>
+    <Image Source="petersonbird1024_91.jpg"></Image>
+    <Image Source="petersonbird1024_92.jpg"></Image>
+    <Image Source="petersonbird1024_93.jpg"></Image>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

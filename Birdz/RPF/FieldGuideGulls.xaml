@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birdz.FieldGuideGulls"
+             Title="Gulls, Terns, Skimmers, and Jaegers">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="petersonbird1024_184.jpg"></Image>
+            <Image Source="petersonbird1024_185.jpg"></Image>
+            <Image Source="petersonbird1024_186.jpg"></Image>
+            <Image Source="petersonbird1024_187.jpg"></Image>
+            <Image Source="petersonbird1024_188.jpg"></Image>
+            <Image Source="petersonbird1024_189.jpg"></Image>
+            <Image Source="petersonbird1024_190.jpg"></Image>
+            <Image Source="petersonbird1024_191.jpg"></Image>
+            <Image Source="petersonbird1024_192.jpg"></Image>
+            <Image Source="petersonbird1024_193.jpg"></Image>
+            <Image Source="petersonbird1024_194.jpg"></Image>
+            <Image Source="petersonbird1024_195.jpg"></Image>
+            <Image Source="petersonbird1024_196.jpg"></Image>
+            <Image Source="petersonbird1024_197.jpg"></Image>
+            <Image Source="petersonbird1024_198.jpg"></Image>
+            <Image Source="petersonbird1024_199.jpg"></Image>
+            <Image Source="petersonbird1024_200.jpg"></Image>
+            <Image Source="petersonbird1024_201.jpg"></Image>
+            <Image Source="petersonbird1024_202.jpg"></Image>
+            <Image Source="petersonbird1024_203.jpg"></Image>
+            <Image Source="petersonbird1024_204.jpg"></Image>
+            <Image Source="petersonbird1024_205.jpg"></Image>
+            <Image Source="petersonbird1024_206.jpg"></Image>
+            <Image Source="petersonbird1024_207.jpg"></Image>
+            <Image Source="petersonbird1024_208.jpg"></Image>
+            <Image Source="petersonbird1024_209.jpg"></Image>
+            <Image Source="petersonbird1024_210.jpg"></Image>
+            <Image Source="petersonbird1024_211.jpg"></Image>
+            <Image Source="petersonbird1024_212.jpg"></Image>
+            <Image Source="petersonbird1024_213.jpg"></Image>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

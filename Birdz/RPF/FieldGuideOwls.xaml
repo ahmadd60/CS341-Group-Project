@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birdz.FieldGuideOwls"
+             Title="Owls and Nightjars">
+
+    <ScrollView>
+        <VerticalStackLayout>
+    <Image Source="petersonbird1024_232.jpg"></Image>
+    <Image Source="petersonbird1024_233.jpg"></Image>
+    <Image Source="petersonbird1024_234.jpg"></Image>
+    <Image Source="petersonbird1024_235.jpg"></Image>
+    <Image Source="petersonbird1024_236.jpg"></Image>
+    <Image Source="petersonbird1024_237.jpg"></Image>
+    <Image Source="petersonbird1024_238.jpg"></Image>
+    <Image Source="petersonbird1024_239.jpg"></Image>
+    <Image Source="petersonbird1024_240.jpg"></Image>
+    <Image Source="petersonbird1024_241.jpg"></Image>
+    <Image Source="petersonbird1024_242.jpg"></Image>
+    <Image Source="petersonbird1024_243.jpg"></Image>
+    <Image Source="petersonbird1024_244.jpg"></Image>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

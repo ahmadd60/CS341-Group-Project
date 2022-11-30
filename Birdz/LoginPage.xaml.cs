@@ -7,12 +7,13 @@ public partial class LoginPage : ContentPage
     AccountPreparation Login = new AccountPreparation();
 
     public LoginPage()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
     }
 
     async void SignInClicked(object sender, EventArgs e)
     {
+<<<<<<< HEAD
         String username = Username.Text;
         String password = Password.Text;
 
@@ -34,6 +35,5 @@ public partial class LoginPage : ContentPage
 
 void ForgotPasswordClicked(object sender, EventArgs e)
     {
-
     }
 }
