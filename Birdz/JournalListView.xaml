@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birdz.JournalListView"
+             xmlns:local="clr-namespace:Birdz">
+
+	<ContentPage.BindingContext>
+		<local:ListOfJournals/>
+	</ContentPage.BindingContext>
+
+	<ContentPage.Content>
+		<StackLayout BackgroundColor="{StaticResource BackgroundColor}">
+			<ListView ItemsSource="{Binding JournalList}"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None"
+                      SeparatorColor="DeepSkyBlue"
+                      IsPullToRefreshEnabled="True"
+                      RefreshControlColor="DeepSkyBlue">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<Grid Padding="10">
+								<Frame CornerRadius="10" HasShadow="True">
+									<StackLayout Orientation="Horizontal">
+										<Image Source="{Binding ImageUrl}"
+                                               WidthRequest="100"
+                                               HeightRequest="100"/>
+										<StackLayout VerticalOptions="Center">
+											<Label VerticalOptions="Center"
+                                                   Text="{Binding JournalTitle}"
+                                                   FontSize="Large"/>
+											<Label VerticalOptions="Center"
+                                                   Text="{Binding Date}"
+                                                   FontSize="Large"/>
+											<Label VerticalOptions="Center"
+                                                   Text="{Binding BirdName}"
+                                                   FontSize="Large"/>
+											<Label VerticalOptions="Center"
+                                                   Text="{Binding Entry}"
+                                                   FontSize="Large"/>
+										</StackLayout>
+									</StackLayout>
+								</Frame>
+							</Grid>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+
+</ContentPage>

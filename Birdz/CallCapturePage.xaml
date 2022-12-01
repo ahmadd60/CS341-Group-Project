@@ -4,7 +4,7 @@
              x:Class="Birdz.CallCapturePage"
              Title="Call Capture">
 
-    <Grid>
+    <Grid BackgroundColor="{StaticResource BackgroundColor}">
         <Label Text="Start Recording Birdz" HorizontalOptions="Center" VerticalOptions="Fill"
                FontSize="Header"/>
         <Button Text="Record Birdz" HorizontalOptions="Center" VerticalOptions="Center"

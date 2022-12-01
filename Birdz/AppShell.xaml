@@ -28,6 +28,14 @@
                 Icon="birdzmascot.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:EntryInfoPage}"/>
     </FlyoutItem>
+    <FlyoutItem Title="NewJournalEntry"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:JournalEntry}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="ListOfJournals"
+                Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:JournalListView}"/>
+    </FlyoutItem>
     <FlyoutItem Title="Log In"
                 Icon="birdzmascot.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"/>
