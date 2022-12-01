@@ -13,7 +13,6 @@ public partial class LoginPage : ContentPage
 
     async void SignInClicked(object sender, EventArgs e)
     {
-<<<<<<< HEAD
         String username = Username.Text;
         String password = Password.Text;
 
