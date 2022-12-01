@@ -1,7 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 
 namespace Birdz;
-
+// Primary Author: DH
+// Reviewer: DA
 public class ListOfBirds
 {
     public ObservableCollection<BirdInfo> BirdList { get; set; }

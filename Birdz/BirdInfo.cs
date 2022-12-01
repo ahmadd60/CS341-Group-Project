@@ -1,4 +1,5 @@
 ﻿namespace Birdz
+// Primary Author: DH
 {
     public class BirdInfo
     {

@@ -1,44 +1,6 @@
-﻿
-/* Unmerged change from project 'Birdz (net6.0-maccatalyst)'
-Before:
-using System;
-using Npgsql;
-using System.Data;
-using System.Collections.ObjectModel;
-After:
-using Npgsql;
-using System;
-using System.Collections.ObjectModel;
-using System.Data;
-*/
-
-/* Unmerged change from project 'Birdz (net6.0-windows10.0.19041.0)'
-Before:
-using System;
-using Npgsql;
-using System.Data;
-using System.Collections.ObjectModel;
-After:
-using Npgsql;
-using System;
-using System.Collections.ObjectModel;
-using System.Data;
-*/
-
-/* Unmerged change from project 'Birdz (net6.0-ios)'
-Before:
-using System;
-using Npgsql;
-using System.Data;
-using System.Collections.ObjectModel;
-After:
-using Npgsql;
-using System;
-using System.Collections.ObjectModel;
-using System.Data;
-*/
-using Npgsql;
-
+﻿using Npgsql;
+//Primary Author: DA
+//Reviewer: AR
 namespace Birdz
 {
     public class LoginDB

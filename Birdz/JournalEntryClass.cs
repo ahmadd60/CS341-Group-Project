@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+// Primary Author: DH
+// Reviewer: DA
 namespace Birdz
 {
     public class JournalEntryClass
