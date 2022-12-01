@@ -3,6 +3,8 @@ using Npgsql;
 using System.Data;
 using System.Collections.ObjectModel;
 
+// Primary Author: DA
+// Reviewer: AR
 namespace Birdz
 {
     public class AccountDatabase

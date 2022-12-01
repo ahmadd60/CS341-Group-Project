@@ -2,6 +2,8 @@ using System;
 using System.Windows;
 namespace Birdz;
 
+// Primary Author: DA
+// Reviewer: AR
 public partial class LoginPage : ContentPage
 {
     AccountPreparation Login = new AccountPreparation();
@@ -13,7 +15,6 @@ public partial class LoginPage : ContentPage
 
     async void SignInClicked(object sender, EventArgs e)
     {
-<<<<<<< HEAD
         String username = Username.Text;
         String password = Password.Text;
 
