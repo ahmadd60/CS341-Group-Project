@@ -1,10 +1,13 @@
-﻿namespace Birdz
-{
-    public class Login
-    {
-        static LoginDB database = new LoginDB();
+﻿using System;
+using System.Text.RegularExpressions;
 
-        public Login()
+namespace Birdz
+{
+    public class AccountPreparation
+    {
+        static AccountDatabase database = new AccountDatabase();
+
+        public AccountPreparation()
         {
         }
 
@@ -19,6 +22,11 @@
             {
                 return false;
             }
+        }
+
+        public bool CheckValidLogIn(String username, String password)
+        {
+            return !VerifyUsernameUnique(username) ? database.GetPassword(username) == password : false;
         }
 
         private bool VerifyUsernameUnique(String username)

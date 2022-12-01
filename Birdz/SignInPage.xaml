@@ -1,44 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Birdz.LoginPage"
-             Title="Log In"
-             BackgroundColor="{DynamicResource BackgroundColor}">
-    <ScrollView>
-    <Grid BackgroundColor="{StaticResource BackgroundColor}">
+             x:Class="Birdz.SignInPage"
+             Title="SignInPage">
+    <Grid BackgroundColor="{StaticResource PrimaryColor}">
         <StackLayout Margin="20" VerticalOptions="FillAndExpand">
-            <Image Source="birdzmascot.jpeg"
+            <Image Source="scarybird.jpeg"
                    HeightRequest="200"
                 HorizontalOptions="Center"/>
 
             <StackLayout Margin="0,40">
-                <Label Style="{StaticResource DefaultText}" 
+                <Label Style="{StaticResource welcome}" 
                        Text=" Welcome To Birdz"
                        FontSize="32"/>
-<<<<<<< HEAD
                 <Label Style="{StaticResource welcome}" 
-=======
-                <Label Style="{StaticResource DefaultText}" 
->>>>>>> e8645e620000097fc288f4b0512e0c29d2e84598
-                       Text=" Log In"
+                       Text=" Sign In"
                        FontSize="16"/>
             </StackLayout>
 
             <StackLayout>
-                <Label Style="{StaticResource DefaultText}" 
+                <Label Style="{StaticResource welcome}" 
                        Text="Username"
                        FontSize="16"/>
                 <Grid Margin="0,5">
+                    <!--<Frame Opacity="16" BackgroundColor="White" CornerRadius="6"/>-->
                     <Entry 
                        TextColor="Black"
                        Placeholder="Enter Username"
                        x:Name="Username"/>
 
                 </Grid>
-                <Label Style="{StaticResource DefaultText}"
+                <Label Style="{StaticResource welcome}" 
                        Text="Password"
                        FontSize="16"/>
                 <Grid Margin="0,5">
+                    <!--<Frame Opacity="16" BackgroundColor="White" CornerRadius="6"/>-->
                     <Entry BackgroundColor="Transparent"
                        TextColor="Black"
                        PlaceholderColor="LightGray"
@@ -46,13 +42,18 @@
                         IsPassword="True"
                         x:Name="Password"/>
                 </Grid>
+
+                <!--BackgroundColor="{StaticResource SecondaryColor}"-->
+                                    <!--TextColor="{StaticResource PrimaryColor}"-->
+
             </StackLayout>
             <Button Margin="0,15"
                     Text="Sign In"
-<<<<<<< HEAD
                     Clicked="SignInClicked"
                     x:Name="SignIn"/>
             <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+
+
                 <Button Style="{StaticResource PrimaryColor}" 
                        Text="Forgot Password?"
                        FontSize="16"
@@ -61,32 +62,14 @@
                        Clicked="ForgotPasswordClicked"/> 
 
                 <Button Style="{StaticResource PrimaryColor}" 
-                       Text="Register"
+                       Text="Log in"
                        FontSize="16"
                        VerticalOptions="EndAndExpand"
                        HorizontalOptions="EndAndExpand"
-                       Clicked="RegisterClicked"
-                       x:Name="Register"/>
-=======
-                    TextColor="{StaticResource DefaultTextColor}"
-                    Clicked="SignInClicked"
-                    x:Name="SignIn"/>
-            <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
-                <Button Style="{StaticResource DefaultText}" 
-                       Text="Forgot Password?"
-                       FontSize="16"
-                       VerticalOptions="EndAndExpand"
-                       HorizontalOptions="StartAndExpand"/>
-                <Button Style="{StaticResource DefaultText}" 
-                       Text="Register"
-                       FontSize="16"
-                       VerticalOptions="EndAndExpand"
-                       HorizontalOptions="EndAndExpand"/>
->>>>>>> e8645e620000097fc288f4b0512e0c29d2e84598
+                       Clicked="LogInClicked"
+                       x:Name="LogIn"/>
             </StackLayout>
 
         </StackLayout>
     </Grid>
-    </ScrollView>
-
 </ContentPage>
