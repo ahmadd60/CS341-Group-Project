@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birdz.SignUpPage"
+             Title="Register">
+    <Grid BackgroundColor="{StaticResource BackgroundColor}">
+        <StackLayout Margin="20" VerticalOptions="FillAndExpand">
+            <Image Source="birdzmascot.jpeg"
+                   HeightRequest="200"
+                HorizontalOptions="Center"/>
+
+            <StackLayout Margin="0,40">
+                <Label Style="{StaticResource WelcomeText}"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Style="{StaticResource DefaultText}" 
+                       Text="Username"
+                       FontSize="16"/>
+                <Grid Margin="0,5">
+                    <Entry Style="{StaticResource EntryField}"
+                       Placeholder="Enter Username"
+                       x:Name="Username"/>
+
+                </Grid>
+                <Label Style="{StaticResource DefaultText}" 
+                       Text="Password"
+                       FontSize="16"/>
+                <Grid Margin="0,5">
+                    <Entry Style="{StaticResource EntryField}"
+                        Placeholder="Enter Password"
+                        IsPassword="True"
+                        x:Name="Password"/>
+                </Grid>
+
+            </StackLayout>
+            <Button Margin="0,15"
+                    Text="Register Account"
+                    Clicked="RegisterClicked"/>
+
+
+        </StackLayout>
+    </Grid>
+</ContentPage>

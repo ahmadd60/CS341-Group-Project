@@ -30,7 +30,7 @@
     </FlyoutItem>
     <FlyoutItem Title="NewJournalEntry"
                 Icon="birdzmascot.jpeg">
-        <ShellContent ContentTemplate="{DataTemplate local:JournalEntry}"/>
+        <ShellContent ContentTemplate="{DataTemplate local:NewJournalEntryPage}"/>
     </FlyoutItem>
     <FlyoutItem Title="ListOfJournals"
                 Icon="birdzmascot.jpeg">

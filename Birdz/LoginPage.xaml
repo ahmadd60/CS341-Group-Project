@@ -16,24 +16,17 @@
                 HorizontalOptions="Center"/>
 
             <StackLayout Margin="0,40">
-                <Label Style="{StaticResource DefaultText}" 
-                       Text=" Welcome To Birdz"
-                       FontSize="32"/>
-
-                <Label Style="{StaticResource DefaultText}" 
-
-                       Text=" Log In"
-                       FontSize="16"/>
-            </StackLayout>
+                    <Label Style="{StaticResource WelcomeText}"/>
+                </StackLayout>
 
             <StackLayout>
                 <Label Style="{StaticResource DefaultText}" 
                        Text="Username"
                        FontSize="16"/>
                 <Grid Margin="0,5">
-                    <Entry 
-                       TextColor="Black"
+                    <Entry Style="{StaticResource EntryField}"
                        Placeholder="Enter Username"
+                       PlaceholderColor="LightGray"
                        x:Name="Username"/>
 
                 </Grid>
@@ -41,9 +34,7 @@
                        Text="Password"
                        FontSize="16"/>
                 <Grid Margin="0,5">
-                    <Entry BackgroundColor="Transparent"
-                       TextColor="Black"
-                       PlaceholderColor="LightGray"
+                    <Entry Style="{StaticResource EntryField}"
                         Placeholder="Enter Password"
                         IsPassword="True"
                         x:Name="Password"/>
