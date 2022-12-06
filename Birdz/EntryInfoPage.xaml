@@ -5,8 +5,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Birdz.EntryInfoPage"
-             Title="Entry">
-    <StackLayout BackgroundColor="{StaticResource PrimaryColor}">
+             Title="Entry"
+             BackgroundColor="{StaticResource BackgroundColor}">
+    <StackLayout BackgroundColor="{StaticResource BackgroundColor}">
         <HorizontalStackLayout>
             <Image Source="birdzmascot.jpeg" 
                WidthRequest="200"
@@ -36,6 +37,22 @@
                    VerticalOptions="Center"
                    HorizontalOptions="Center"
                FontSize="Large"/>
+        <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+            <Button Style="{StaticResource PrimaryColor}" 
+                       Text="Edit Entry"
+                       FontSize="16"
+                       VerticalOptions="EndAndExpand"
+                       HorizontalOptions="StartAndExpand"
+                       />
+
+            <Button Style="{StaticResource PrimaryColor}" 
+                       Text="Mystery Button"
+                       FontSize="16"
+                       VerticalOptions="EndAndExpand"
+                       HorizontalOptions="EndAndExpand"
+                       />
+        </StackLayout>
 
     </StackLayout>
+    
 </ContentPage>
