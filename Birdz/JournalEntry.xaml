@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <!--
     Primary Author: DH
     -->
@@ -9,13 +9,13 @@
 		<StackLayout>
             <Label Text="New Journal Entry" HorizontalOptions="Center" FontSize="Title"/>
             <Label Text="Journal Title:" FontSize="Small"/>
-            <Entry Placeholder="title" FontSize="Small"/>
+            <Entry Placeholder="title" FontSize="Small" x:Name="Title"/>
 			<Label Text="Bird Name:" FontSize="Small"/>
-            <Entry Placeholder="robin" FontSize="Small"/>
+            <Entry Placeholder="robin" FontSize="Small" x:Name="Name"/>
 			<Label Text="Date:" FontSize="Small"/>
-            <Entry Placeholder="10/24/2022" FontSize="Small"/>
+            <Entry Placeholder="10/24/2022" FontSize="Small" x:Name="Date"/>
 			<Label Text="Location:" FontSize="Small"/>
-            <Entry Placeholder="outside" FontSize="Small"/>
+            <Entry Placeholder="outside" FontSize="Small" x:Name="Location"/>
 			<Frame CornerRadius="25" BackgroundColor="{StaticResource BackgroundColor}">
 				<StackLayout>
 
@@ -23,11 +23,12 @@
 						   HeightRequest="300"
 						   BackgroundColor="AliceBlue"
 						   IsSpellCheckEnabled="True"
+						   x:Name="Notes"
                        />
 
 				</StackLayout>
 			</Frame>
-			<Button Text="Save"  WidthRequest="100" BackgroundColor="{StaticResource BackgroundColor}"/>
+			<Button Text="Save"  WidthRequest="100" BackgroundColor="{StaticResource BackgroundColor}" Clicked="Save"/>
 			<Button Text="Delete"  WidthRequest="100" BackgroundColor="{StaticResource BackgroundColor}"/>
 		</StackLayout>
 	</ScrollView>
