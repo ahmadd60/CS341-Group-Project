@@ -1,4 +1,7 @@
-﻿namespace Birdz;
+﻿using CommunityToolkit.Maui;
+
+namespace Birdz;
+
 
 public static class MauiProgram
 {
@@ -7,6 +10,7 @@ public static class MauiProgram
         var builder = MauiApp.CreateBuilder();
         builder
             .UseMauiMaps()
+            .UseMauiCommunityToolkit()
             .UseMauiApp<App>()
             .ConfigureFonts(fonts =>
             {
