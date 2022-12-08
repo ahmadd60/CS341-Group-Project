@@ -26,6 +26,25 @@
                 </MapSpan>
             </x:Arguments>
         </maps:Map>
+        <VerticalStackLayout VerticalOptions="EndAndExpand" BackgroundColor="{StaticResource BackgroundColor}">
+            <Label Style="{StaticResource DefaultText}" 
+                       Text="Bird Name:"
+                       FontSize="16"/>
+            <Grid Margin="0,5">
+                <Entry Style="{StaticResource EntryField}"
+                       Placeholder="Robin"
+                       PlaceholderColor="LightGray"
+                       x:Name="bird"/>
+            </Grid>
+            <Label Style="{StaticResource DefaultText}"
+                       Text="Brief Description:"
+                       FontSize="16"/>
+            <Grid Margin="0,5">
+                <Entry Style="{StaticResource EntryField}"
+                        Placeholder="Brief Description:"
+                        x:Name="brief"/>
+            </Grid>
+        </VerticalStackLayout>
     </Grid>
     
 	

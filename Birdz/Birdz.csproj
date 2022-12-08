@@ -48,17 +48,12 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 	<ItemGroup>
-	  <MauiXaml Remove="AddPinPage.xaml" />
 	  <MauiXaml Remove="PinPopUp.xaml" />
-	  <MauiXaml Remove="PopUp.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <Compile Update="NewJournalEntry.xaml.cs">
 	    <DependentUpon>NewJournalEntry.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="PopUp.xaml.cs">
-	    <DependentUpon>PopUp.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="RPF\FieldGuideAlcids.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
@@ -232,15 +227,6 @@
 
 	<ItemGroup>
 	  <None Remove="Npgsql" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <EmbeddedResource Include="AddPinPage.xaml">
-	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-	  </EmbeddedResource>
-	  <EmbeddedResource Include="PopUp.xaml">
-	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-	  </EmbeddedResource>
 	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="CommunityToolkit.Maui" Version="3.0.0" />

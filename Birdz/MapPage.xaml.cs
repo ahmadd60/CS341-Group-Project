@@ -16,7 +16,7 @@ public partial class MapPage : Microsoft.Maui.Controls.ContentPage
     private static double lat;
     private static double lng;
     static String BirdName;
-    static String brief;
+    static String Brief;
 
     Maps map = new Maps();
     Pin pin;
@@ -24,15 +24,9 @@ public partial class MapPage : Microsoft.Maui.Controls.ContentPage
     {
         lat = e.Location.Latitude;
         lng = e.Location.Longitude;
-        this.ShowPopup(new PopUp());
-        
-    }
-
-    void pinInfo(String name, String br)
-    {
-        BirdName = name;
-        brief = br;
-        addPins(lat, lng, name, br);
+        BirdName = bird.Text;
+        Brief = brief.Text;
+            addPins(lat,lng,BirdName,Brief);
     }
 
     void addPins(double lat, double lng, String name,String brief)
@@ -45,7 +39,7 @@ public partial class MapPage : Microsoft.Maui.Controls.ContentPage
             Location = new Location(lat, lng)
         };
         mappy.Pins.Add(pin);
-        map.savedPins.Add(pin);
+        map.SavedPins.Add(pin);
     }
 
     

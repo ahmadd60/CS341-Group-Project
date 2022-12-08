@@ -10,14 +10,14 @@ namespace Birdz
     class Maps
     {
    
-        public ObservableCollection<Pin> savedPins { get; set; }
+        public ObservableCollection<Pin> SavedPins { get; set; }
 
         public Maps()
         {
-            savedPins = new ObservableCollection<Pin>();
+            SavedPins = new ObservableCollection<Pin>();
 
             void addPin(Pin pin){
-                savedPins.Add(pin);
+                SavedPins.Add(pin);
             }
 
         }
