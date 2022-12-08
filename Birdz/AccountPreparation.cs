@@ -1,7 +1,4 @@
-﻿using System;
-using System.Text.RegularExpressions;
-
-// Primary Author: DA
+﻿// Primary Author: DA
 // Reviewer: AR
 namespace Birdz
 {
@@ -12,29 +9,58 @@ namespace Birdz
         public AccountPreparation()
         {
         }
-
-        public bool AddEntry(String username, String password)
+        public enum InvalidLoginAttempt
         {
-            if (VerifyUsernameUnique(username))
+            None,
+            Password,
+            Username,
+            NullField
+        }
+
+        public InvalidLoginAttempt CheckValidLogin(String username, String password)
+        {
+            if (username == null || password == null)
             {
-                database.AddEntry(username, password);
-                return true;
+                return InvalidLoginAttempt.NullField;
             }
-            else
+            if (database.UsernameExists(username))
             {
-                return false;
+                return InvalidLoginAttempt.Username;
             }
+            if (!database.GetPassword(username).Equals(password))
+            {
+                return InvalidLoginAttempt.Password;
+            }
+            return InvalidLoginAttempt.None;
         }
 
-        public bool CheckValidLogIn(String username, String password)
+        public InvalidLoginAttempt CheckValidRegistration(String username, String password)
         {
-            return !VerifyUsernameUnique(username) ? database.GetPassword(username) == password : false;
+            if (username == null || password == null)
+            {
+                return InvalidLoginAttempt.NullField;
+            }
+            if (database.UsernameExists(username))
+            {
+                return InvalidLoginAttempt.Username;
+            }
+            if (!VerifyNewPassword(password))
+            {
+                return InvalidLoginAttempt.Password;
+            }
+            database.AddEntry(username, password);
+            return InvalidLoginAttempt.None;
         }
 
-        private bool VerifyUsernameUnique(String username)
+        private bool VerifyNewPassword(String password)
         {
-            return database.VerifyUsernameUnique(username);
+            //do this method
+            return true;
         }
+
     }
 }
+
+
+
 

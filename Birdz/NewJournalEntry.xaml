@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Primary Author: DH
+    -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birdz.NewJournalEntryPage"
+             Title="Add Journal Entry">
+
+    <ScrollView>
+        <Grid BackgroundColor="{StaticResource BackgroundColor}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout BackgroundColor="{StaticResource BackgroundColor}"
+                         Grid.Row="0"
+                         Margin="20">
+
+                <Label Style="{StaticResource DefaultText}"
+                       Text="Journal Title:"
+                       FontSize="Small"/>
+                <Entry Style="{StaticResource EntryField}"
+                       Placeholder="title" 
+                       FontSize="Small"
+                       x:Name="Title"/>
+                <Label Style="{StaticResource DefaultText}"
+                       Text="Bird Name:" 
+                       FontSize="Small"/>
+                <Entry Style="{StaticResource EntryField}"
+                       Placeholder="robin" 
+                       FontSize="Small"
+                       x:Name="Name"/>
+                <Label Style="{StaticResource DefaultText}"
+                       Text="Date:" 
+                       FontSize="Small"/>
+                <Entry Style="{StaticResource EntryField}"
+                       Placeholder="10/24/2022" 
+                       FontSize="Small"
+                       x:Name="Date"/>
+                <Label Style="{StaticResource DefaultText}"
+                       Text="Location:" 
+                       FontSize="Small"/>
+                <Entry Style="{StaticResource EntryField}"
+                       Placeholder="outside"
+                       FontSize="Small"
+                       x:Name="Location"/>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="{StaticResource BackgroundColor}"
+                         Margin="20"
+                         Grid.Row="1">
+                <Label Style="{StaticResource DefaultText}"
+                       Text="Notes:"
+                       FontSize="Small"
+                       />
+
+                <Frame CornerRadius="8"
+                       Scale="1"
+                       BackgroundColor="LightBlue"
+                       Grid.Row="1">
+                    <Editor Placeholder="pretty bird, much red, very tweet"
+                            BackgroundColor="LightBlue"
+                            IsSpellCheckEnabled="True"
+                            HeightRequest="200"
+                            x:Name="Entry"/>
+                </Frame>
+                <Button Text="Save"
+                    x:Name="SaveClicked"
+                    HorizontalOptions="Center"
+                    Padding="10"/>
+            </StackLayout>
+
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

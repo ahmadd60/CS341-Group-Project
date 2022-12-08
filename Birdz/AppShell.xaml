@@ -30,7 +30,7 @@
     </FlyoutItem>
     <FlyoutItem Title="NewJournalEntry"
                 Icon="birdzmascot.jpeg">
-        <ShellContent ContentTemplate="{DataTemplate local:JournalEntry}"/>
+        <ShellContent ContentTemplate="{DataTemplate local:NewJournalEntryPage}"/>
     </FlyoutItem>
     <FlyoutItem Title="ListOfJournals"
                 Icon="birdzmascot.jpeg">
@@ -49,55 +49,55 @@
              Icon="birdzmascot.jpeg">
             <ShellContent ContentTemplate="{DataTemplate local:FieldGuideIntro}"
                       Title="Introduction"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideGeese}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideGeese}"
                       Title="Geese, Swans, and Ducks"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideChickens}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideChickens}"
                       Title="Chickenlike Birds"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideLoons}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideLoons}"
                       Title="Loons and Grebes"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideTubenoses}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideTubenoses}"
                       Title="Tubenoses, Pelicans, Cormorants, and Relatives"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWaders}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWaders}"
                       Title="Waders"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideVultures}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideVultures}"
                       Title="Diurnal Birds of Prey"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideCoots}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideCoots}"
                       Title="Rail-Like Birds"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideShorebirds}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideShorebirds}"
                       Title="Shorebirds"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideGulls}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideGulls}"
                       Title="Gulls, Terns, Skimmers, and Jaegers"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideAlcids}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideAlcids}"
                       Title="Alcids"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuidePigeons}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuidePigeons}"
                       Title="Pigeons and Doves"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideParakeets}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideParakeets}"
                       Title="Parakeets"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideCuckoos}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideCuckoos}"
                       Title="Cuckoos"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideOwls}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideOwls}"
                       Title="Owls and Nightjars"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideHummingbirds}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideHummingbirds}"
                       Title="Hummingbirds"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideSwifts}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideSwifts}"
                       Title="Swifts and Kingfishers"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWoodpeckers}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWoodpeckers}"
                       Title="Woodpeckers"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideFlycatchers}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideFlycatchers}"
                       Title="Flycatchers"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideShrikes}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideShrikes}"
                       Title="Shrikes and Vireos"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideJays}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideJays}"
                       Title="Jays and Crows"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideSwallows}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideSwallows}"
                       Title="Swallows and Larks"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideChickadees}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideChickadees}"
                       Title="Chickadees, Titmice, and Nuthatches"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWrens}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWrens}"
                       Title="Wrens, Kinglets, and Gnatcatchers"/>
         </Tab>
     </FlyoutItem>
-    
+
 
 </Shell>
 

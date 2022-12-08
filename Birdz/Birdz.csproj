@@ -49,6 +49,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="NewJournalEntry.xaml.cs">
+	    <DependentUpon>NewJournalEntry.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="RPF\FieldGuideAlcids.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
@@ -111,6 +114,9 @@
 	  </Compile>
 	  <Compile Update="SearchPage.xaml.cs">
 	    <DependentUpon>SearchPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="SignUpPage.xaml.cs">
+	    <DependentUpon>SignUpPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -211,7 +217,7 @@
 	  <MauiXaml Update="SearchPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="SignInPage.xaml">
+	  <MauiXaml Update="SignUpPage.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
 	</ItemGroup>
