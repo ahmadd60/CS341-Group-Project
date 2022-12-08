@@ -1,46 +1,26 @@
-﻿// Primary Author : DH
+﻿using Microsoft.Maui.Controls.Maps;
+using Microsoft.Maui.Maps;
+using Map = Microsoft.Maui.Controls.Maps.Map;
+using System.Collections.ObjectModel;
+
+// Primary Author : DH
 // Reviewer : 
 namespace Birdz
 {
     class Maps
     {
-        private static CancellationTokenSource _cancelTokenSource;
-        private static bool _isCheckingLocation;
+   
+        public ObservableCollection<Pin> SavedPins { get; set; }
 
-        public async Task GetCurrentLocation()
+        public Maps()
         {
-            try
-            {
-                _isCheckingLocation = true;
+            SavedPins = new ObservableCollection<Pin>();
 
-                GeolocationRequest request = new GeolocationRequest(GeolocationAccuracy.Medium, TimeSpan.FromSeconds(10));
-
-                _cancelTokenSource = new CancellationTokenSource();
-
-                Location location = await Geolocation.Default.GetLocationAsync(request, _cancelTokenSource.Token);
-
-                if (location != null)
-                        Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
+            void addPin(Pin pin){
+                SavedPins.Add(pin);
             }
-            // Catch one of the following exceptions:
-            //   FeatureNotSupportedException
-            //   FeatureNotEnabledException
-            //   PermissionException
-            catch (Exception ex)
-            {
-                CancelRequest();
 
-            }
-            finally
-            {
-                _isCheckingLocation = false;
-            }
         }
-
-        public void CancelRequest()
-        {
-            if (_isCheckingLocation && _cancelTokenSource != null && _cancelTokenSource.IsCancellationRequested == false)
-                _cancelTokenSource.Cancel();
-        }
+       
     }
 }

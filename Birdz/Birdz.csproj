@@ -47,6 +47,9 @@
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Remove="PinPopUp.xaml" />
+	</ItemGroup>
 
 	<ItemGroup>
 	  <Compile Update="NewJournalEntry.xaml.cs">
@@ -226,6 +229,7 @@
 	  <None Remove="Npgsql" />
 	</ItemGroup>
 	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Maui" Version="3.0.0" />
 	  <PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.49" />
 	  <PackageReference Include="Npgsql" Version="7.0.0" />
 	</ItemGroup>
