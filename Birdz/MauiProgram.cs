@@ -2,6 +2,8 @@
 
 public static class MauiProgram
 {
+    public static JournalDatabase Journal = new JournalDatabase();
+
     public static MauiApp CreateMauiApp()
     {
         var builder = MauiApp.CreateBuilder();

@@ -4,19 +4,36 @@ public partial class JournalEntry : ContentPage
 {
     private Journal Journal = new Journal();
 
-	public JournalEntry()
+    private String title;
+    private String name;
+    private String date;
+    private String location;
+    private String notes;
+
+    public JournalEntry()
 	{
 		InitializeComponent();
 	}
 
+    public JournalEntry(String title, String name, String date, String location, String notes)
+    {
+        InitializeComponent();
+
+        this.title = title;
+        this.name = name;
+        this.date = date;
+        this.location = location;
+        this.notes = notes;
+
+        Title.Text = title;
+        Name.Text = name;
+        Date.Text = date;
+        Location.Text = location;
+        Notes.Text = notes;
+    }
+
     public void Save(object sender, EventArgs e)
     {
-        String title;
-        String name;
-        String date;
-        String location;
-        String notes;
-
         try
         {
             title = Title.Text;

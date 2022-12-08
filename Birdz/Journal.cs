@@ -18,6 +18,16 @@ namespace Birdz
 			Database.AddEntry(title, name, date, location, notes);
 		}
 
+		public void DeleteEntry(Entry entry)
+		{
+			Database.DeleteEntry(entry);
+		}
+
+		public void UpdateEntry(Entry entry)
+		{
+			//duaatodo add update entry functionality
+		}
+
 		private String CheckValidParam(String param)
 		{
 			return param.Length > 0 ? param : throw new InvalidJournalEntry();
@@ -33,9 +43,9 @@ namespace Birdz
         {
             try
             {
+				CheckValidParam(dateString);
                 DateTime date = Convert.ToDateTime(dateString);
                 return $"{date}";
-
             }
             catch (Exception e) when (e is FormatException || e is InvalidJournalEntry)
             {
