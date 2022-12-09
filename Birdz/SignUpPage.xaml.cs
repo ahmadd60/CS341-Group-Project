@@ -1,5 +1,8 @@
-﻿
-namespace Birdz;
+﻿namespace Birdz;
+
+// Primary Author: DA
+// Secondary Author: AR
+// Reviewer: AR
 
 public partial class SignUpPage : ContentPage
 {
@@ -10,7 +13,7 @@ public partial class SignUpPage : ContentPage
         InitializeComponent();
     }
 
-    void RegisterClicked(object sender, EventArgs e)
+    async void RegisterClicked(object sender, EventArgs e)
     {
         string username = Username.Text;
         string password = Password.Text;
@@ -19,7 +22,7 @@ public partial class SignUpPage : ContentPage
         if (error.ToString().Equals("None"))
         {
             GoodEntry(username);
-            Application.Current.MainPage = new AppShell();
+            await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
         }
         else
         {

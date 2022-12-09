@@ -5,7 +5,8 @@ using Pin = Microsoft.Maui.Controls.Maps.Pin;
 using PinType = Microsoft.Maui.Controls.Maps.PinType;
 
 namespace Birdz;
-
+// Primary Author: DH
+// Reviewer: AR
 public partial class MapPage : Microsoft.Maui.Controls.ContentPage
 {
     public MapPage()

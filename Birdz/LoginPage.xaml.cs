@@ -1,6 +1,7 @@
 namespace Birdz;
 
 // Primary Author: DA
+// Secondary Author: AR
 // Reviewer: AR
 public partial class LoginPage : ContentPage
 {

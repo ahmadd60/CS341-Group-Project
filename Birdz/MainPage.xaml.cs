@@ -1,5 +1,7 @@
 ﻿namespace Birdz;
 
+// Primary Author : DH
+// Reviewer : AR
 public partial class MainPage : Microsoft.Maui.Controls.ContentPage
 {
 
@@ -13,6 +15,9 @@ public partial class MainPage : Microsoft.Maui.Controls.ContentPage
         public string Color { get; set; }
         public string ImageUrl { get; set; }
     }
+
+
+
 }
 
 

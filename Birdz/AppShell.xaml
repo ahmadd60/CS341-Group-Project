@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
+    <!--
+    Primary Author: AR
+    -->
 <Shell
     x:Class="Birdz.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -103,6 +106,7 @@
                       Title="Log In"
                       Shell.FlyoutBehavior="Disabled"/>
     </FlyoutItem>
+    <MenuItem Text="LOGGED IN AS"/>
 
 
 </Shell>

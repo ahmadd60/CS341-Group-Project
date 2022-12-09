@@ -1,4 +1,5 @@
 ﻿// Primary Author: DA
+// Secondary Author: AR
 // Reviewer: AR
 namespace Birdz
 {
@@ -27,7 +28,7 @@ namespace Birdz
             {
                 return InvalidLoginAttempt.Username;
             }
-            if (database.GetPassword(username).Equals(password))
+            if (!database.GetPassword(username).Equals(password))
             {
                 return InvalidLoginAttempt.Password;
             }
