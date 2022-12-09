@@ -14,12 +14,13 @@ public partial class LoginPage : ContentPage
 
     async void SignInClicked(object sender, EventArgs e)
     {
-        String username = Username.Text;
-        String password = Password.Text;
+        string username = Username.Text;
+        string password = Password.Text;
         AccountPreparation.InvalidLoginAttempt error = Login.CheckValidLogin(username, password);
         if (error.Equals(AccountPreparation.InvalidLoginAttempt.None))
         {
-            await Navigation.PushAsync(new EntryInfoPage());
+            await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+            //Application.Current.MainPage = new AppShell();
         }
         else
         {
@@ -31,8 +32,8 @@ public partial class LoginPage : ContentPage
 
     async void BadEntry(AccountPreparation.InvalidLoginAttempt error)
     {
-        String errorString = error.ToString();
-        String message = "";
+        string errorString = error.ToString();
+        string message = "";
         if (errorString.Equals("Password"))
         {
             message = "Incorrect Password";
@@ -51,6 +52,7 @@ public partial class LoginPage : ContentPage
     async void RegisterClicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new SignUpPage());
+        //Application.Current.MainPage = new SignUpPage();
     }
 
 

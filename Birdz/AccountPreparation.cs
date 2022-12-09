@@ -4,7 +4,7 @@ namespace Birdz
 {
     public class AccountPreparation
     {
-        static AccountDatabase database = new AccountDatabase();
+        public static AccountDatabase database = new AccountDatabase();
 
         public AccountPreparation()
         {
@@ -27,7 +27,7 @@ namespace Birdz
             {
                 return InvalidLoginAttempt.Username;
             }
-            if (!database.GetPassword(username).Equals(password))
+            if (database.GetPassword(username).Equals(password))
             {
                 return InvalidLoginAttempt.Password;
             }
@@ -40,7 +40,7 @@ namespace Birdz
             {
                 return InvalidLoginAttempt.NullField;
             }
-            if (database.UsernameExists(username))
+            if (!database.UsernameExists(username))
             {
                 return InvalidLoginAttempt.Username;
             }

@@ -44,6 +44,7 @@ namespace Birdz
 
         public String GetPassword(String username)
         {
+            Console.WriteLine(Usernames[username]);
             return Usernames[username];
         }
 

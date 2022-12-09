@@ -6,12 +6,21 @@
     xmlns:local="clr-namespace:Birdz"
     FlyoutBehavior="Flyout"
     FlyoutHeaderBehavior="Fixed"
-    FlyoutVerticalScrollMode="Auto">
+    FlyoutVerticalScrollMode="Auto"
+>
 
-    <ShellContent
+    <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"
+                  Title="Login"
+                  FlyoutItemIsVisible="False"/>
+    
+    <FlyoutItem Title="Home Page"
+                Icon="birdzmascot.jpeg">
+        <ShellContent
         Title="Birdz"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+    </FlyoutItem>
+
     <FlyoutItem Title="Search"
                 Icon="birdzmascot.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:SearchPage}"/>
@@ -31,14 +40,6 @@
     <FlyoutItem Title="NewJournalEntry"
                 Icon="birdzmascot.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:NewJournalEntryPage}"/>
-    </FlyoutItem>
-    <FlyoutItem Title="ListOfJournals"
-                Icon="birdzmascot.jpeg">
-        <ShellContent ContentTemplate="{DataTemplate local:JournalListView}"/>
-    </FlyoutItem>
-    <FlyoutItem Title="Log In"
-                Icon="birdzmascot.jpeg">
-        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"/>
     </FlyoutItem>
     <FlyoutItem Title="Bonus Resources"
                 Icon="birdzmascot.jpeg">
@@ -96,6 +97,11 @@
             <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWrens}"
                       Title="Wrens, Kinglets, and Gnatcatchers"/>
         </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Sign Out" Icon="birdzmascot.jpeg">
+        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"
+                      Title="Log In"
+                      Shell.FlyoutBehavior="Disabled"/>
     </FlyoutItem>
 
 
