@@ -23,17 +23,19 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Padding="10">
-                                <Frame CornerRadius="10" HasShadow="True">
+                            <Grid Padding="5">
+                                <Frame CornerRadius="5" HasShadow="True">
                                     <StackLayout Orientation="Horizontal">
                                         <Image Source="{Binding ImageUrl}"
                                                WidthRequest="100"
                                                HeightRequest="100"/>
                                         <StackLayout VerticalOptions="Center">
                                             <Label VerticalOptions="Center"
+                                                   Padding="10"
                                                    Text="{Binding BirdName}"
                                                    FontSize="Large"/>
                                             <Label VerticalOptions="Center"
+                                                   Padding="10"
                                                    Text="{Binding Color}"
                                                    FontSize="Large"/>
                                         </StackLayout>

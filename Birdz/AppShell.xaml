@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
+    <!--
+    Primary Author: AR
+    -->
 <Shell
     x:Class="Birdz.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -6,47 +9,51 @@
     xmlns:local="clr-namespace:Birdz"
     FlyoutBehavior="Flyout"
     FlyoutHeaderBehavior="Fixed"
-    FlyoutVerticalScrollMode="Auto">
+    FlyoutVerticalScrollMode="Auto"
+>
 
-    <ShellContent
+    <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"
+                  Title="Login"
+                  FlyoutItemIsVisible="False"/>
+
+    <FlyoutItem Title="Home Page"
+                Icon="homepage.png">
+        <ShellContent
         Title="Birdz"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+    </FlyoutItem>
     <FlyoutItem Title="Search"
-                Icon="birdzmascot.jpeg">
+                Icon="search.png">
         <ShellContent ContentTemplate="{DataTemplate local:SearchPage}"/>
     </FlyoutItem>
+    <FlyoutItem Title="New Entry"
+                Icon="newjournal.png">
+        <ShellContent ContentTemplate="{DataTemplate local:NewJournalEntryPage}"/>
+    </FlyoutItem>
     <FlyoutItem Title="Capture"
-                Icon="birdzmascot.jpeg">
+                Icon="lock.png">
         <ShellContent ContentTemplate="{DataTemplate local:CallCapturePage}"/>
     </FlyoutItem>
     <FlyoutItem Title="Map"
-                Icon="birdzmascot.jpeg">
+                Icon="map.png">
         <ShellContent ContentTemplate="{DataTemplate local:MapPage}"/>
     </FlyoutItem>
+    <!--remove entryinfopage from flyout once navigation to it is complete
+        -->
     <FlyoutItem Title="EntryInfoPage"
                 Icon="birdzmascot.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:EntryInfoPage}"/>
     </FlyoutItem>
-    <FlyoutItem Title="NewJournalEntry"
-                Icon="birdzmascot.jpeg">
-        <ShellContent ContentTemplate="{DataTemplate local:NewJournalEntryPage}"/>
-    </FlyoutItem>
-    <FlyoutItem Title="ListOfJournals"
-                Icon="birdzmascot.jpeg">
-        <ShellContent ContentTemplate="{DataTemplate local:JournalListView}"/>
-    </FlyoutItem>
-    <FlyoutItem Title="Log In"
-                Icon="birdzmascot.jpeg">
-        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"/>
-    </FlyoutItem>
+
+    <!-- option felt stupid and out of place in the app. add it back if you disagree. no big deal -ar
     <FlyoutItem Title="Bonus Resources"
                 Icon="birdzmascot.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:ExtraResourcesPage}"/>
-    </FlyoutItem>
+    </FlyoutItem>-->
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <Tab Title="Roger Peterson Field Manual"
-             Icon="birdzmascot.jpeg">
+             Icon="manual.png">
             <ShellContent ContentTemplate="{DataTemplate local:FieldGuideIntro}"
                       Title="Introduction"/>
             <ShellContent ContentTemplate="{DataTemplate local:FieldGuideGeese}"
@@ -97,6 +104,12 @@
                       Title="Wrens, Kinglets, and Gnatcatchers"/>
         </Tab>
     </FlyoutItem>
+    <FlyoutItem Title="Sign Out" Icon="logout.png">
+        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"
+                      Title="Log In"
+                      Shell.FlyoutBehavior="Disabled"/>
+    </FlyoutItem>
+    <MenuItem Text="LOGGED IN AS"/>
 
 
 </Shell>

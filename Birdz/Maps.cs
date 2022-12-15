@@ -4,7 +4,7 @@ using Map = Microsoft.Maui.Controls.Maps.Map;
 using System.Collections.ObjectModel;
 
 // Primary Author : DH
-// Reviewer : 
+// Reviewer : AR
 namespace Birdz
 {
     class Maps

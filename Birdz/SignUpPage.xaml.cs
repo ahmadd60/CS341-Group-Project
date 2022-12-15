@@ -1,5 +1,9 @@
 ﻿namespace Birdz;
 
+// Primary Author: DA
+// Secondary Author: AR
+// Reviewer: AR
+
 public partial class SignUpPage : ContentPage
 {
     AccountPreparation NewAccount = new AccountPreparation();
@@ -11,13 +15,14 @@ public partial class SignUpPage : ContentPage
 
     async void RegisterClicked(object sender, EventArgs e)
     {
-        String username = Username.Text;
-        String password = Password.Text;
+        string username = Username.Text;
+        string password = Password.Text;
 
         AccountPreparation.InvalidLoginAttempt error = NewAccount.CheckValidRegistration(username, password);
         if (error.ToString().Equals("None"))
         {
-            await Navigation.PushAsync(new EntryInfoPage());
+            GoodEntry(username);
+            await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
         }
         else
         {
@@ -27,8 +32,8 @@ public partial class SignUpPage : ContentPage
 
     async void BadEntry(AccountPreparation.InvalidLoginAttempt error)
     {
-        String errorString = error.ToString();
-        String message = "";
+        string errorString = error.ToString();
+        string message = "";
         if (errorString.Equals("Password"))
         {
             message = "Bad Password";
@@ -42,6 +47,11 @@ public partial class SignUpPage : ContentPage
             message = "One or more fields are empty!";
         }
         await DisplayAlert("Login Failed", message, "OK");
+    }
+
+    async void GoodEntry(string username)
+    {
+        await DisplayAlert("Chirp!", "Account successfuly registered to: " + username, "SWEET!");
     }
 
 }

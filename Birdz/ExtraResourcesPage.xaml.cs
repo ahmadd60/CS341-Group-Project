@@ -1,4 +1,3 @@
-
 namespace Birdz;
 
 public partial class ExtraResourcesPage : ContentPage

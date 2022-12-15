@@ -1,10 +1,11 @@
 ﻿// Primary Author: DA
+// Secondary Author: AR
 // Reviewer: AR
 namespace Birdz
 {
     public class AccountPreparation
     {
-        static AccountDatabase database = new AccountDatabase();
+        public static AccountDatabase database = new AccountDatabase();
 
         public AccountPreparation()
         {
@@ -40,7 +41,7 @@ namespace Birdz
             {
                 return InvalidLoginAttempt.NullField;
             }
-            if (database.UsernameExists(username))
+            if (!database.UsernameExists(username))
             {
                 return InvalidLoginAttempt.Username;
             }
