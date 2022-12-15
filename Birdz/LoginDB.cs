@@ -5,6 +5,7 @@ namespace Birdz
 {
     public class LoginDB
     {
+
         const String table = "users";
         String cs;
         Dictionary<string, string> Usernames = new Dictionary<string, string>();
@@ -33,7 +34,7 @@ namespace Birdz
             using var cmd = new NpgsqlCommand(sql, con);
         }
 
-        public bool VerifyUsernameUnique(String username)
+        public bool UsernameTaken(String username)
         {
             return !(Usernames.ContainsKey(username));
         }

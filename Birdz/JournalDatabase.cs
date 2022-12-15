@@ -56,6 +56,11 @@ namespace Birdz
 
         }
 
+        public ObservableCollection<Entry> GetEntries()
+        {
+            return Journal;
+        }
+
         public bool CheckUniqueTitle(String title)
         {
             for(int i = 0; i < Journal.Count; i++)

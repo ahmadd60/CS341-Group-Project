@@ -9,7 +9,12 @@ public partial class JournalListView : ContentPage
     public JournalListView()
     {
         InitializeComponent();
-        JournalEntries.ItemsSource = MauiProgram.Journal.Journal;
+        JournalEntries.ItemsSource = MauiProgram.Journal.GetEntries();
+    }
+
+    public async void AddEntry(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new JournalEntry());
     }
 
     public async void DeleteEntry(object sender, EventArgs e)
@@ -31,8 +36,10 @@ public partial class JournalListView : ContentPage
 
         if (wantToEdit)
         {
+            Entry hold = (Entry)(JournalEntries.SelectedItem);
+            Journal.DeleteEntry(hold);
+
             await Navigation.PushAsync(new JournalEntry(selectedEntry.Title, selectedEntry.Name, selectedEntry.Date, selectedEntry.Location, selectedEntry.Notes));
-            Journal.DeleteEntry((Entry)JournalEntries.SelectedItem);
         }
     }
 }

@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
+    <!--
+    Primary Author: AR
+    -->
 <Shell
     x:Class="Birdz.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -6,98 +9,108 @@
     xmlns:local="clr-namespace:Birdz"
     FlyoutBehavior="Flyout"
     FlyoutHeaderBehavior="Fixed"
-    FlyoutVerticalScrollMode="Auto">
+    FlyoutVerticalScrollMode="Auto"
+>
 
-    <ShellContent
+    <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"
+                  Title="Login"
+                  FlyoutItemIsVisible="False"/>
+
+    <FlyoutItem Title="Home Page"
+                Icon="homepage.png">
+        <ShellContent
         Title="Birdz"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+    </FlyoutItem>
     <FlyoutItem Title="Search"
-                Icon="birdzmascot.jpeg">
+                Icon="search.png">
         <ShellContent ContentTemplate="{DataTemplate local:SearchPage}"/>
     </FlyoutItem>
+    <FlyoutItem Title="New Entry"
+                Icon="newjournal.png">
+        <ShellContent ContentTemplate="{DataTemplate local:NewJournalEntryPage}"/>
+    </FlyoutItem>
     <FlyoutItem Title="Capture"
-                Icon="birdzmascot.jpeg">
+                Icon="lock.png">
         <ShellContent ContentTemplate="{DataTemplate local:CallCapturePage}"/>
     </FlyoutItem>
     <FlyoutItem Title="Map"
-                Icon="birdzmascot.jpeg">
+                Icon="map.png">
         <ShellContent ContentTemplate="{DataTemplate local:MapPage}"/>
     </FlyoutItem>
+    <!--remove entryinfopage from flyout once navigation to it is complete
+        -->
     <FlyoutItem Title="EntryInfoPage"
                 Icon="birdzmascot.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:EntryInfoPage}"/>
     </FlyoutItem>
-    <FlyoutItem Title="NewJournalEntry"
-                Icon="birdzmascot.jpeg">
-        <ShellContent ContentTemplate="{DataTemplate local:JournalEntry}"/>
-    </FlyoutItem>
-    <FlyoutItem Title="ListOfJournals"
-                Icon="birdzmascot.jpeg">
-        <ShellContent ContentTemplate="{DataTemplate local:JournalListView}"/>
-    </FlyoutItem>
-    <FlyoutItem Title="Log In"
-                Icon="birdzmascot.jpeg">
-        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"/>
-    </FlyoutItem>
+
+    <!-- option felt stupid and out of place in the app. add it back if you disagree. no big deal -ar
     <FlyoutItem Title="Bonus Resources"
                 Icon="birdzmascot.jpeg">
         <ShellContent ContentTemplate="{DataTemplate local:ExtraResourcesPage}"/>
-    </FlyoutItem>
+    </FlyoutItem>-->
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <Tab Title="Roger Peterson Field Manual"
-             Icon="birdzmascot.jpeg">
+             Icon="manual.png">
             <ShellContent ContentTemplate="{DataTemplate local:FieldGuideIntro}"
                       Title="Introduction"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideGeese}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideGeese}"
                       Title="Geese, Swans, and Ducks"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideChickens}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideChickens}"
                       Title="Chickenlike Birds"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideLoons}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideLoons}"
                       Title="Loons and Grebes"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideTubenoses}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideTubenoses}"
                       Title="Tubenoses, Pelicans, Cormorants, and Relatives"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWaders}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWaders}"
                       Title="Waders"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideVultures}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideVultures}"
                       Title="Diurnal Birds of Prey"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideCoots}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideCoots}"
                       Title="Rail-Like Birds"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideShorebirds}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideShorebirds}"
                       Title="Shorebirds"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideGulls}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideGulls}"
                       Title="Gulls, Terns, Skimmers, and Jaegers"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideAlcids}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideAlcids}"
                       Title="Alcids"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuidePigeons}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuidePigeons}"
                       Title="Pigeons and Doves"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideParakeets}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideParakeets}"
                       Title="Parakeets"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideCuckoos}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideCuckoos}"
                       Title="Cuckoos"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideOwls}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideOwls}"
                       Title="Owls and Nightjars"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideHummingbirds}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideHummingbirds}"
                       Title="Hummingbirds"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideSwifts}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideSwifts}"
                       Title="Swifts and Kingfishers"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWoodpeckers}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWoodpeckers}"
                       Title="Woodpeckers"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideFlycatchers}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideFlycatchers}"
                       Title="Flycatchers"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideShrikes}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideShrikes}"
                       Title="Shrikes and Vireos"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideJays}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideJays}"
                       Title="Jays and Crows"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideSwallows}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideSwallows}"
                       Title="Swallows and Larks"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideChickadees}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideChickadees}"
                       Title="Chickadees, Titmice, and Nuthatches"/>
-        <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWrens}"
+            <ShellContent ContentTemplate="{DataTemplate local:FieldGuideWrens}"
                       Title="Wrens, Kinglets, and Gnatcatchers"/>
         </Tab>
     </FlyoutItem>
-    
+    <FlyoutItem Title="Sign Out" Icon="logout.png">
+        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"
+                      Title="Log In"
+                      Shell.FlyoutBehavior="Disabled"/>
+    </FlyoutItem>
+    <MenuItem Text="LOGGED IN AS"/>
+
 
 </Shell>
 

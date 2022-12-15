@@ -32,7 +32,7 @@ public partial class JournalEntry : ContentPage
         Notes.Text = notes;
     }
 
-    public void Save(object sender, EventArgs e)
+    public async void Save(object sender, EventArgs e)
     {
         try
         {
@@ -44,11 +44,19 @@ public partial class JournalEntry : ContentPage
 
             Journal.AddEntry(title, name, date, location, notes);
 
-            DisplayAlert("Entry Added!", "", "Ok");
+            await DisplayAlert("Entry Added!", "", "Ok");
+
+            await Navigation.PushAsync(new JournalListView());
+
         }
         catch (InvalidJournalEntry)
         {
-            DisplayAlert("Invalid parameters", "Make sure all required fields are entered, journal title is unique, and date is valid", "Ok");
+            await DisplayAlert("Invalid parameters", "Make sure all required fields are entered, journal title is unique, and date is valid", "Ok");
+        }
+        catch(NullReferenceException)
+        {
+            await DisplayAlert("Invalid parameters", "Make sure all required fields are entered, journal title is unique, and date is valid", "Ok");
+
         }
     }
 }

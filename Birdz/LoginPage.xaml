@@ -1,78 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!-- 
     Primary Author: DA
-    Secondary Author: 
+    Secondary Author: AR
  -->
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Birdz.LoginPage"
              Title="Log In"
-             BackgroundColor="{DynamicResource BackgroundColor}">
+             BackgroundColor="{DynamicResource BackgroundColor}"
+             Shell.FlyoutBehavior="Disabled">
     <ScrollView>
-    <Grid BackgroundColor="{StaticResource BackgroundColor}">
-        <StackLayout Margin="20" VerticalOptions="FillAndExpand">
-            <Image Source="birdzmascot.jpeg"
+        <Grid BackgroundColor="{StaticResource BackgroundColor}">
+            <StackLayout Margin="20" VerticalOptions="FillAndExpand">
+                <Image Source="birdzmascot.jpeg"
                    HeightRequest="200"
                 HorizontalOptions="Center"/>
 
-            <StackLayout Margin="0,40">
-                <Label Style="{StaticResource DefaultText}" 
-                       Text=" Welcome To Birdz"
-                       FontSize="32"/>
+                <StackLayout Margin="0,40">
+                    <Label Style="{StaticResource WelcomeText}"/>
+                </StackLayout>
 
-                <Label Style="{StaticResource DefaultText}" 
-
-                       Text=" Log In"
-                       FontSize="16"/>
-            </StackLayout>
-
-            <StackLayout>
-                <Label Style="{StaticResource DefaultText}" 
+                <StackLayout>
+                    <Label Style="{StaticResource DefaultText}" 
                        Text="Username"
                        FontSize="16"/>
-                <Grid Margin="0,5">
-                    <Entry 
-                       TextColor="Black"
+                    <Grid Margin="0,5">
+                        <Entry Style="{StaticResource EntryField}"
                        Placeholder="Enter Username"
+                       PlaceholderColor="LightGray"
                        x:Name="Username"/>
 
-                </Grid>
-                <Label Style="{StaticResource DefaultText}"
+                    </Grid>
+                    <Label Style="{StaticResource DefaultText}"
                        Text="Password"
                        FontSize="16"/>
-                <Grid Margin="0,5">
-                    <Entry BackgroundColor="Transparent"
-                       TextColor="Black"
-                       PlaceholderColor="LightGray"
+                    <Grid Margin="0,5">
+                        <Entry Style="{StaticResource EntryField}"
                         Placeholder="Enter Password"
                         IsPassword="True"
                         x:Name="Password"/>
-                </Grid>
-            </StackLayout>
-            <Button Margin="0,15"
+                    </Grid>
+                </StackLayout>
+                <Button Margin="0,15"
                     Text="Sign In"
                     Clicked="SignInClicked"
                     x:Name="SignIn"/>
-            <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
-                <Button Style="{StaticResource PrimaryColor}" 
+                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Button Style="{StaticResource PrimaryColor}" 
                        Text="Forgot Password?"
                        FontSize="16"
                        VerticalOptions="EndAndExpand"
                        HorizontalOptions="StartAndExpand"
-                       Clicked="ForgotPasswordClicked"/> 
+                       Clicked="ForgotPasswordClicked"/>
 
-                <Button Style="{StaticResource PrimaryColor}" 
+                    <Button Style="{StaticResource PrimaryColor}" 
                        Text="Register"
                        FontSize="16"
                        VerticalOptions="EndAndExpand"
                        HorizontalOptions="EndAndExpand"
                        Clicked="RegisterClicked"
                        x:Name="Register"/>
+                </StackLayout>
 
             </StackLayout>
-
-        </StackLayout>
-    </Grid>
+        </Grid>
     </ScrollView>
 
 </ContentPage>

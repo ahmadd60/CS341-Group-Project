@@ -1,4 +1,7 @@
 ﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+    Primary Author: AR
+    -->
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Birdz"
@@ -10,6 +13,18 @@
             <Style x:Key="DefaultText"   TargetType="Label">
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="FontSize" Value="22"/>
+            </Style>
+            <Style x:Key="WelcomeText" TargetType="Label">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="32"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Text" Value="Welcome To Birdz"/>
+            </Style>
+            <Style x:Key="EntryField"   TargetType="Entry">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="PlaceholderColor" Value="LightGray"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

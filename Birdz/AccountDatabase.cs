@@ -1,14 +1,14 @@
-﻿using System;
-using Npgsql;
+﻿using Npgsql;
 using System.Data;
-using System.Collections.ObjectModel;
 
 // Primary Author: DA
+// Secondary Author: AR
 // Reviewer: AR
 namespace Birdz
 {
     public class AccountDatabase
     {
+
         const String table = "users";
         String cs;
         Dictionary<string, string> Usernames = new Dictionary<string, string>();
@@ -16,7 +16,7 @@ namespace Birdz
         public AccountDatabase()
         {
             var bitHost = "db.bit.io";
-            var bitApiKey = "v2_3wAsN_6fH5FtrJ45CyhB4Ux8Vim6V"; 
+            var bitApiKey = "v2_3wAsN_6fH5FtrJ45CyhB4Ux8Vim6V";
 
             var bitUser = "ahmadd60";
             var bitDbName = $"{bitUser}/Birdz";
@@ -27,6 +27,8 @@ namespace Birdz
             con.Open();
             Usernames = InitializeUsernames();
         }
+
+
 
         public void AddEntry(String username, String password)
         {
@@ -46,7 +48,7 @@ namespace Birdz
             return Usernames[username];
         }
 
-        public bool VerifyUsernameUnique(String username)
+        public bool UsernameExists(String username)
         {
             return !(Usernames.ContainsKey(username));
         }

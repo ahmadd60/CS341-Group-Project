@@ -1,24 +1,38 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
     Primary Author: DH
+    Secondary Author: AR
     -->
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Birdz.EntryInfoPage"
-             Title="Entry">
-    <StackLayout BackgroundColor="{StaticResource PrimaryColor}">
+             Title="Entry"
+             BackgroundColor="{StaticResource BackgroundColor}">
+    <StackLayout BackgroundColor="{StaticResource BackgroundColor}">
         <HorizontalStackLayout>
             <Image Source="birdzmascot.jpeg" 
                WidthRequest="200"
                HeightRequest="200"
                HorizontalOptions="Start"
                VerticalOptions="Start"/>
-            <Button Text="Update Entry"
-                VerticalOptions="Start"
-                HorizontalOptions="End"
-               FontSize="Large"
-                WidthRequest="250"
-                HeightRequest="100"/>
+            <VerticalStackLayout>
+                <Label Style="{StaticResource DefaultText}"
+                       HorizontalTextAlignment="End"
+                   Text="Journal Title"
+                   x:Name="Title"
+                   FontSize="25"/>
+                <Label Style="{StaticResource DefaultText}"
+                       HorizontalTextAlignment="End"
+                   Text="10/27/99"
+                   x:Name="Date"
+                   FontSize="15"/>
+
+                <Label Style="{StaticResource DefaultText}"
+                       HorizontalTextAlignment="End"
+                   Text="Robin"
+                   x:Name="Name"/>
+
+            </VerticalStackLayout>
         </HorizontalStackLayout>
         <Label Text="Expanded Bird Info"
                    VerticalOptions="Center"
@@ -36,6 +50,24 @@
                    VerticalOptions="Center"
                    HorizontalOptions="Center"
                FontSize="Large"/>
+        <StackLayout VerticalOptions="FillAndExpand" 
+                     Orientation="Horizontal"
+                     Margin="20,20">
+            <Button Style="{StaticResource PrimaryColor}" 
+                       Text="Edit Entry"
+                       FontSize="16"
+                       VerticalOptions="EndAndExpand"
+                       HorizontalOptions="StartAndExpand"
+                       />
+
+            <Button Style="{StaticResource PrimaryColor}" 
+                       Text="Delete Entry"
+                       FontSize="16"
+                       VerticalOptions="EndAndExpand"
+                       HorizontalOptions="EndAndExpand"
+                       />
+        </StackLayout>
 
     </StackLayout>
+
 </ContentPage>
