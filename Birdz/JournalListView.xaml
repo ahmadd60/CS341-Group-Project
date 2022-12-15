@@ -15,7 +15,7 @@
 
 	<ContentPage.Content>
 		<StackLayout BackgroundColor="{StaticResource BackgroundColor}">
-			<ListView ItemsSource="{Binding JournalList}"
+			<ListView x:Name="JournalEntries"
                       HasUnevenRows="True"
                       SeparatorVisibility="None"
                       SeparatorColor="DeepSkyBlue"
@@ -32,16 +32,19 @@
                                                HeightRequest="100"/>
 										<StackLayout VerticalOptions="Center">
 											<Label VerticalOptions="Center"
-                                                   Text="{Binding JournalTitle}"
+                                                   Text="{Binding Title}"
+                                                   FontSize="Large"/>
+											<Label VerticalOptions="Center"
+                                                   Text="{Binding Name}"
                                                    FontSize="Large"/>
 											<Label VerticalOptions="Center"
                                                    Text="{Binding Date}"
                                                    FontSize="Large"/>
 											<Label VerticalOptions="Center"
-                                                   Text="{Binding BirdName}"
+                                                   Text="{Binding Location}"
                                                    FontSize="Large"/>
 											<Label VerticalOptions="Center"
-                                                   Text="{Binding Entry}"
+                                                   Text="{Binding Notes}"
                                                    FontSize="Large"/>
 										</StackLayout>
 									</StackLayout>
@@ -51,7 +54,9 @@
 					</DataTemplate>
 				</ListView.ItemTemplate>
 			</ListView>
+			<Button Text="New"  Clicked="AddEntry"/>
+			<Button Text="Update" Clicked="UpdateEntry"/>
+			<Button Text="Delete" Clicked="DeleteEntry"/>
 		</StackLayout>
 	</ContentPage.Content>
-
 </ContentPage>

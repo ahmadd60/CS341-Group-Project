@@ -13,7 +13,7 @@ namespace Birdz
         public LoginDB()
         {
             var bitHost = "db.bit.io";
-            var bitApiKey = "v2_3vT6r_3hj5CFNwmiQ9DeintbZMdi3";
+            var bitApiKey = "v2_3wVrq_5kEqP6eKMQScKJrfZtfKXd8";
 
             var bitUser = "ahmadd60";
             var bitDbName = $"{bitUser}/Birdz";

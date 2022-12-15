@@ -6,6 +6,8 @@ namespace Birdz;
 public partial class LoginPage : ContentPage
 {
     AccountPreparation Login = new AccountPreparation();
+    string username;
+    string password;
 
     public LoginPage()
     {
@@ -15,12 +17,14 @@ public partial class LoginPage : ContentPage
 
     async void SignInClicked(object sender, EventArgs e)
     {
-        string username = Username.Text;
-        string password = Password.Text;
+        username = Username.Text;
+        password = Password.Text;
+
         AccountPreparation.InvalidLoginAttempt error = Login.CheckValidLogin(username, password);
         if (error.Equals(AccountPreparation.InvalidLoginAttempt.None))
         {
-            await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+            await Navigation.PushAsync(new JournalListView());
+
             //Application.Current.MainPage = new AppShell();
         }
         else
